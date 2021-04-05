@@ -1,4 +1,4 @@
-import {personal} from "../../profile";
+import {personal} from "../../data/profile";
 import './styles.css'
 
 export default function () {
