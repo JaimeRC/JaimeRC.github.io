@@ -1,4 +1,4 @@
-import {personal} from '../../profile'
+import {personal} from '../../data/profile'
 
 export default function (props) {
     return (
@@ -16,7 +16,7 @@ export default function (props) {
                     <div className={"col-sm-12 col-md-12 col-lg-8 col-xl-8"}>
                         <h2 className={"fw-bold text-left"}>{`${personal.name} ${personal.surname}`}</h2>
                         <h4 className={"fw-bold text-left"}>{personal.title}</h4>
-                        <h6 className={"fw-bold text-left"}>{personal.description}</h6>
+                        <h6 className={"text-left"}>{personal.description}</h6>
                     </div>
                 </div>
             </div>
