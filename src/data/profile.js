@@ -2,7 +2,8 @@ export const personal = {
     name: 'Jaime',
     surname: 'Rubio',
     title: 'Full Stack Web',
-    description: 'Curioso que le encantan los retos, constantemente aprendiendo para mantener mis conocimientos al día, en particular, tengo interés por la arquitectura, rendimiento, patrones de diseño, calidad de código y buenas practicas. Me considero una persona proactiva, dinámica, empática y muy alegre.'
+    description: 'Curioso que le encantan los retos, constantemente aprendiendo para mantener mis conocimientos al día, en particular, tengo interés por la arquitectura, rendimiento, patrones de diseño, calidad de código y buenas practicas. Me considero una persona proactiva, dinámica, empática y muy alegre.',
+    foto: '/images/foto-personal.jpg'
 }
 
 export const skills = [
@@ -223,7 +224,7 @@ export const experiences = [
     {
         title: 'Analista programador (Telefónica)',
         company: 'Modis',
-        companyLogo: 'modis',
+        companyLogo: '/images/logo-telefonica.jpg',
         description: "",
         place: "Barcelona",
         remote: 'true',
@@ -240,7 +241,7 @@ export const experiences = [
     {
         title: 'Full Stack Developer',
         company: 'nixi1',
-        companyLogo: 'nixi1',
+        companyLogo: '/images/logo-nixi1.jpg',
         description: "",
         place: 'Barcelona',
         remote: true,
@@ -258,7 +259,7 @@ export const experiences = [
     {
         title: 'Full Stack Developer',
         company: 'Grupo Hotusa',
-        companyLogo: 'grupo_hotusa',
+        companyLogo: '/images/logo-grupo-hotusa.jpg',
         description: "",
         place: 'Barcelona',
         remote: false,
@@ -269,8 +270,17 @@ export const experiences = [
             "Manejo de bases de datos (MongoDB, SQL Oracle y RedisDB).",
             "Mantenimiento, desarrollo, y nuevas implementaciones de Aplicaciones Web XML (Java).",
             "TDD para la realización de nuevas implementaciones (JUnit, Mocha, Chai, Jest) y pruebas de rendimiento, carga y nivel de estrés (JMeter y Apache Bench).",
-            "Metodología SCRUM, integración continua y Git-flo"],
+            "Metodología SCRUM, integración continua y Git-flow"],
         from: '04/2018',
         to: '07/2019',
     },
 ]
+
+export const interests = [
+    {url: '/images/foto-snorkel.jpg', title: 'Snorkeling', width: '40%'},
+    {url: '/images/foto-travelling.jpg', title: 'Travelling', width: '20%'},
+    {url: '/images/foto-trekking.jpg', title: 'Trekking', width: '40%'},
+    {url: '/images/foto-snowboard.jpg', title: 'Snowboarding', width: '38%'},
+    {url: '/images/foto-running.jpg', title: 'Running', width: '38%'},
+    {url: '/images/foto-reading.jpg', title: 'Reading', width: '24%'}
+];
