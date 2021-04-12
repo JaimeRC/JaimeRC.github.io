@@ -1,6 +1,12 @@
-export const personal = {
+
+export const welcome = {
     name: 'Jaime',
     surname: 'Rubio',
+    title: 'Hola, soy %NAME_SURNAME%',
+    subtitle: 'Soy un desarrollador ebb full-stack.'
+}
+
+export const about = {
     title: 'Full Stack Web',
     description: 'Curioso que le encantan los retos, constantemente aprendiendo para mantener mis conocimientos al día, en particular, tengo interés por la arquitectura, rendimiento, patrones de diseño, calidad de código y buenas practicas. Me considero una persona proactiva, dinámica, empática y muy alegre.',
     foto: '/images/foto-personal.jpg'
