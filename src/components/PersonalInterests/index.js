@@ -1,4 +1,4 @@
-import {interests} from '../../data/profile'
+import {interests} from '../../data'
 import './styles.css'
 
  function Hobbies(props) {

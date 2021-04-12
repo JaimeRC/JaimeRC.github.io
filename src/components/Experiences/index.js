@@ -1,9 +1,8 @@
-import {experiences} from '../../data/profile'
+import {experiences} from '../../data'
 import {faClock} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Experiences(props) {
-    console.log(process.env.PUBLIC_URL)
     return (
         <div className={"row py-5 bg-light mx-auto"}>
             <div className={"col-sm-1 col-md-1 col-lg-2 col-xl-2"}/>
