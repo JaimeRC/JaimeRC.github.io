@@ -1,8 +1,10 @@
 import './styles.css'
-import Canvas from "../Canvas";
-import {welcome, about} from "../../data";
+import Canvas from '../Canvas';
+import { useContext } from 'react';
+import { LanguageContext } from '../LanguageProvider';
 
 function Welcome() {
+    const { translate: { welcome, about } } = useContext(LanguageContext)
     return (
         <section className="flex height-fix">
             <div className="canvas">
@@ -10,8 +12,7 @@ function Welcome() {
             </div>
             <div className="flex">
                 <div className="text">
-                    Hola, soy <span
-                    className="highlight">{`${about.name} ${about.surname}`}</span>.
+                    Hola, soy <span className="highlight">{`${about.name} ${about.surname}`}</span>.
                     <br/>{welcome.subtitle}
                 </div>
             </div>
