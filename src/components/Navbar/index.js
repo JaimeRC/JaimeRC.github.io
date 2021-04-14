@@ -3,14 +3,13 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 function Navbar(props) {
     return (
-        <div>
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                             aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"/>
                     </button>
-                    <a className="navbar-brand" href="#">{"Jaime Rubio"}</a>
+                    <label className="navbar-brand">{"Jaime Rubio"}</label>
                     <div className="collapse navbar-collapse" id="navbarToggler">
                         <div className="navbar-nav me-auto"/>
                         <form className="d-flex">
@@ -44,8 +43,7 @@ function Navbar(props) {
                         </form>
                     </div>
                 </div>
-            </nav>
-        </div>)
+            </nav>)
 }
 
 export default Navbar

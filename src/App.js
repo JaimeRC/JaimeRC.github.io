@@ -4,7 +4,6 @@ import About from "./components/About";
 import Experiences from "./components/Experiences";
 import Home from "./components/Welcome";
 import PersonalInterest from './components/PersonalInterests'
-import Canvas from "./components/Canvas";
 
 function App() {
     return (
