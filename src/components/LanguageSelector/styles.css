@@ -1,32 +1,11 @@
-.languageFlag {
+.language {
     transform: scale(0.5);
 }
 
-.languageFlag img {
-    width: 40px;
-    height: 40px;
+.language img {
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     margin: 5px 0;
     transform: scale(1) !important;
-}
-
-.first {
-    z-index: 11;
-    display: block;
-    height: 40px;
-    margin-bottom: 5px;
-}
-
-.second {
-    z-index: 10;
-    opacity: 0;
-    transform: translateY(-40px);
-    transition-duration: 300ms;
-    display: none;
-}
-
-.languageFlag:hover .second {
-    transform: translateY(0px);
-    opacity: 1;
-    display: block;
 }

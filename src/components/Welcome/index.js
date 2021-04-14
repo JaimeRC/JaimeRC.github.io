@@ -12,7 +12,7 @@ function Welcome() {
             </div>
             <div className="flex">
                 <div className="text">
-                    Hola, soy <span className="highlight">{`${about.name} ${about.surname}`}</span>.
+                    {welcome.title} <span className="highlight">{`${about.name} ${about.surname}`}</span>.
                     <br/>{welcome.subtitle}
                 </div>
             </div>

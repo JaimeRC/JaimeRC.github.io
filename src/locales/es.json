@@ -1,6 +1,6 @@
 {
   "welcome": {
-    "title": "Hola, soy %NAME_SURNAME%.",
+    "title": "Hola, soy",
     "subtitle": "Soy un desarrollador web full-stack."
   },
   "about": {

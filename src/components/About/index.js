@@ -30,7 +30,7 @@ function About(props) {
                     <div className={'col-sm-12 col-md-12 col-lg-6 col-xl-6'}>
                         {skills.map((skill, index) => {
                             return (
-                                <div className="progress my-3">
+                                <div className="progress my-3" key={`skill_${index}`}>
                                     <div className="progress-bar" role="progressbar" style={{ 'width': skill.percentage + '%' }}
                                          aria-valuenow={skill.percentage} aria-valuemin="0"
                                          aria-valuemax="100">

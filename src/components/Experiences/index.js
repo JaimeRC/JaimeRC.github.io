@@ -4,7 +4,7 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Experiences(props) {
-    const { translate: { work, experiences } } = useContext(LanguageContext)
+    const { translate: {  experiences } } = useContext(LanguageContext)
     return (
         <div className={'row py-5 bg-light mx-auto'}>
             <div className={'col-sm-1 col-md-1 col-lg-2 col-xl-2'}/>

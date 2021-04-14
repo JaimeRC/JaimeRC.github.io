@@ -1,20 +1,22 @@
 import './styles.css'
-import { faGithub, faStackOverflow, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import LanguageSelector from '../LanguageSelector'
 
-function Navbar(props) {
+function Navbar() {
     return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-navbar">
             <div className="container-fluid">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggler"
                         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"/>
                 </button>
-                <a className="navbar-brand" href="#">{'Jaime Rubio'}</a>
+                <label className="navbar-brand">{'Jaime Rubio'}</label>
                 <div className="collapse navbar-collapse" id="navbarToggler">
                     <div className="navbar-nav me-auto"/>
                     <form className="d-flex">
-                        <ul className="navbar-nav me-2">
+                        <ul className="navbar-nav me-2 text-center">
                             <li className="nav-item">
                                 <a
                                     rel="noreferrer"
@@ -39,6 +41,9 @@ function Navbar(props) {
                                     href="https://www.linkedin.com/in/jaimerubiocaballero/"
                                     target="_blank"> <FontAwesomeIcon icon={faLinkedin}/>
                                 </a>
+                            </li>
+                            <li className="nav-line">
+                                <LanguageSelector/>
                             </li>
                         </ul>
                     </form>

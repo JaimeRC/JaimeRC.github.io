@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { LanguageContext } from '../LanguageProvider';
 
 function Education() {
-    const { translate: { education, courses, educations } } = useContext(LanguageContext)
+    const { translate: { education,  educations } } = useContext(LanguageContext)
     return (
         <>
             <div className={'row py-5 bg-light mx-auto'}>
@@ -49,7 +49,7 @@ function Education() {
                     <div className="row row-cols-1 row-cols-md-3 g-4">
                         {Object.keys(educations).map((company, index) => {
                             return (
-                                <div className="col">
+                                <div className="col" key={`educations_${index}`}>
                                     <div className="card rounded">
                                         <img src={educations[company].image} className="card-img-top border-bottom" alt={educations[company].name}/>
                                         <h5 className="card-title fw-bold pt-2 px-2">{educations[company].name}</h5>
