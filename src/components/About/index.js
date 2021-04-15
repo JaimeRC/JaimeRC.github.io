@@ -17,7 +17,6 @@ function About(props) {
                             className="img-thumbnail border-0 rounded-pill"
                             alt="imagen personal"
                         />
-
                     </div>
                     <div className={'col-sm-12 col-md-12 col-lg-7 col-xl-7 px-5'}>
                         <h2 className={'fw-bold text-left'}>{`${about.name} ${about.surname}`}</h2>

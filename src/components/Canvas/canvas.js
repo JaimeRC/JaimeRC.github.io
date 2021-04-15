@@ -7,7 +7,7 @@ const particles = [];
 function normalPool(o) {
     let r = 0;
     do {
-        var a = Math.round(randomNormal({ mean: o.mean, dev: o.dev }));
+        let a = Math.round(randomNormal({ mean: o.mean, dev: o.dev }));
         if (a < o.pool.length && a >= 0) return o.pool[a];
         r++;
     } while (r < 100);
@@ -21,7 +21,7 @@ function randomNormal(o) {
         r = (a = 2 * Math.random() - 1) * a + (n = 2 * Math.random() - 1) * n;
     } while (r >= 1);
     e = a * Math.sqrt(-2 * Math.log(r) / r)
-    return  t * e + l;
+    return t * e + l;
 }
 
 function rand(low, high) {

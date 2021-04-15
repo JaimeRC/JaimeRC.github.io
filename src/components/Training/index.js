@@ -4,16 +4,16 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import { LanguageContext } from '../LanguageProvider';
 
-function Education() {
-    const { translate: { education,  educations } } = useContext(LanguageContext)
+function Training() {
+    const { translate: { training,  educations } } = useContext(LanguageContext)
     return (
         <>
-            <div className={'row py-5 bg-light mx-auto'}>
+            <div className={'row py-5 mx-auto'}>
                 <div className={'col-sm-1 col-md-1 col-lg-2 col-xl-2'}/>
                 <div className={'col-sm-10 col-md-10 col-lg-8 col-xl-8'}>
-                    <h2 className={'fw-bold text-center'}>{education.title}</h2>
+                    <h2 className={'fw-bold text-center'}>{training.title}</h2>
                     <hr className={'mt-1'}/>
-                    {education.courses.map((course, index) => {
+                    {training.courses.map((course, index) => {
                         return (
                             <div className={'row mt-5'} key={`work-${index}`}>
                                 <div className={'col-sm-12 col-md-12 col-lg-3 col-xl-3'}>
@@ -43,7 +43,7 @@ function Education() {
                 </div>
                 <div className={'col-sm-1 col-md-1 col-lg-2 col-xl-2'}/>
             </div>
-            <div className={'row py-5 bg-light mx-auto'}>
+            <div className={'row py-5 mx-auto'}>
                 <div className={'col-sm-1 col-md-1 col-lg-2 col-xl-2'}/>
                 <div className={'col-sm-10 col-md-10 col-lg-8 col-xl-8'}>
                     <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -64,7 +64,6 @@ function Education() {
             </div>
         </>
     )
-
 }
 
-export default Education
+export default Training
