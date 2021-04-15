@@ -3,8 +3,8 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Experiences from './components/Experiences';
 import Welcome from './components/Welcome';
-import PersonalInterest from './components/PersonalInterests'
-import Education from './components/Education';
+import Hobbies from './components/Hobbies'
+import Training from './components/Training';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
             <Welcome/>
             <About/>
             <Experiences/>
-            <Education/>
-            <PersonalInterest/>
+            <Training/>
+            <Hobbies/>
             <Footer/>
         </div>
     );

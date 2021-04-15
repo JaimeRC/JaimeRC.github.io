@@ -4,14 +4,14 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Experiences(props) {
-    const { translate: {  experiences } } = useContext(LanguageContext)
+    const { translate: { experiences } } = useContext(LanguageContext)
     return (
         <div className={'row py-5 bg-light mx-auto'}>
             <div className={'col-sm-1 col-md-1 col-lg-2 col-xl-2'}/>
             <div className={'col-sm-10 col-md-10 col-lg-8 col-xl-8'}>
-                <h2 className={'fw-bold text-center'}>{'Experiencia Profesional'}</h2>
+                <h2 className={'fw-bold text-center'}>{experiences.title}</h2>
                 <hr className={'mt-1'}/>
-                {experiences.map((work, index) => {
+                {experiences.works.map((work, index) => {
                     return (
                         <div className={'row mt-5'} key={`work-${index}`}>
                             <div className={'col-sm-12 col-md-12 col-lg-3 col-xl-3'}>
