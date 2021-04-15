@@ -15,7 +15,9 @@ function normalPool(o) {
 
 function randomNormal(o) {
     o = Object.assign({ mean: 0, dev: 1, pool: [] }, o)
-    if (Array.isArray(o.pool) && o.pool.length > 0) return normalPool(o);
+    if (Array.isArray(o.pool) && o.pool.length > 0) {
+        return normalPool(o);
+    }
     let r, a, n, e, l = o.mean, t = o.dev;
     do {
         r = (a = 2 * Math.random() - 1) * a + (n = 2 * Math.random() - 1) * n;
@@ -66,14 +68,12 @@ function drawParticle(particle, canvas, ctx) {
 
     ctx.fillStyle = particle.colour;
     ctx.beginPath();
-    ctx.ellipse(
-        particle.x * canvas.width,
-        particle.y * vh + canvas.height / 2,
-        particle.diameter * vh,
-        particle.diameter * vh,
-        0,
-        0,
-        2 * Math.PI);
+
+    const x = particle.x * canvas.width
+    const y = particle.y * vh + canvas.height / 2
+    const radiusXY = particle.diameter * vh
+    const endAngle = 4 * Math.PI
+    ctx.ellipse(x, y, radiusXY, radiusXY, 0, 0, endAngle);
 
     ctx.fill();
 }

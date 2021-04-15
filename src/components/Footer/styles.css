@@ -1,0 +1,9 @@
+.footer {
+    background: linear-gradient(to bottom, rgb(37, 41, 52) 0%,rgb(37, 41, 52) 100%) ;
+}
+
+.line {
+    height:2px;
+    background-color:rgb(206,206,206);
+    width:100%;
+}
