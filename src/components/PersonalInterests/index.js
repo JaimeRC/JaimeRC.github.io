@@ -4,7 +4,8 @@ import { LanguageContext } from '../LanguageProvider';
 
 function Hobbies(props) {
     const { translate: { interests } } = useContext(LanguageContext)
-    return (<div className={'row my-5 mx-auto'}>
+    return (
+        <div className={'row my-5 mx-auto'}>
         <div className={'col-sm-1 col-md-1 col-lg-2 col-xl-2'}/>
         <div className={'col-sm-10 col-md-10 col-lg-8 col-xl-8'}>
             <h2 className={'fw-bold text-center'}>{'Intereses personales'}</h2>
