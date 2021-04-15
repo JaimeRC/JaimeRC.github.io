@@ -5,7 +5,7 @@ const particles = [];
 
 // modified version of random-normal
 function normalPool(o) {
-    var r = 0;
+    let r = 0;
     do {
         var a = Math.round(randomNormal({ mean: o.mean, dev: o.dev }));
         if (a < o.pool.length && a >= 0) return o.pool[a];
@@ -14,10 +14,14 @@ function normalPool(o) {
 }
 
 function randomNormal(o) {
-    if (o = Object.assign({ mean: 0, dev: 1, pool: [] }, o), Array.isArray(o.pool) && o.pool.length > 0) return normalPool(o);
-    var r, a, n, e, l = o.mean, t = o.dev;
-    do {r = (a = 2 * Math.random() - 1) * a + (n = 2 * Math.random() - 1) * n;} while (r >= 1);
-    return e = a * Math.sqrt(-2 * Math.log(r) / r), t * e + l;
+    o = Object.assign({ mean: 0, dev: 1, pool: [] }, o)
+    if (Array.isArray(o.pool) && o.pool.length > 0) return normalPool(o);
+    let r, a, n, e, l = o.mean, t = o.dev;
+    do {
+        r = (a = 2 * Math.random() - 1) * a + (n = 2 * Math.random() - 1) * n;
+    } while (r >= 1);
+    e = a * Math.sqrt(-2 * Math.log(r) / r)
+    return  t * e + l;
 }
 
 function rand(low, high) {
