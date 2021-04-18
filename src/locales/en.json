@@ -179,6 +179,10 @@
       "image": "https://play-lh.googleusercontent.com/CiGs15N1e1tXrSnVLEY9jOnKi1oNzPQNRjqhR8fXE0pnu_bRyNmfc8xXr2VQUJTfJ9A"
     },
     {
+      "name": "Jira",
+      "image": "https://www.solarwinds.com/-/media/solarwinds/swdcv2/licensed-products/service-desk/integrations/sd-integrations-logo-jira.ashx?rev=701fbaa7f8ac4ae08e0406c8984c43e7&hash=75D4F04DE99B88DE7B2C4193F0616F1F"
+    },
+    {
       "name": "Scrum",
       "width": 75,
       "image": "https://programaenlinea.net/wp-content/uploads/2016/06/scrum-arquitectura.png"
@@ -241,7 +245,7 @@
           "Handling databases (MongoDB, SQL Oracle and RedisDB).",
           "Maintenance, development, and new implementations of XML Web Applications (Java).",
           "TDD for new implementations (JUnit, Mocha, Chai, Jest) and performance, load and stress level tests (JMeter and Apache Bench).",
-          "SCRUM methodology, continuous integration and Git-flow"
+          "Scrum methodology, continuous integration and Git-flow"
         ],
         "from": "04/2018",
         "to": "07/2019"
