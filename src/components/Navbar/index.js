@@ -27,19 +27,19 @@ function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    rel="noreferrer"
                                     className="nav-link text-light"
-                                    href="https://es.stackoverflow.com/users/100834/planta4"
-                                    target="_blank"> <FontAwesomeIcon icon={faStackOverflow}/>
+                                    rel="noreferrer"
+                                    href="https://www.linkedin.com/in/jaimerubiocaballero/"
+                                    target="_blank"> <FontAwesomeIcon icon={faLinkedin}/>
                                 </a>
 
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="nav-link text-light"
                                     rel="noreferrer"
-                                    href="https://www.linkedin.com/in/jaimerubiocaballero/"
-                                    target="_blank"> <FontAwesomeIcon icon={faLinkedin}/>
+                                    className="nav-link text-light"
+                                    href="https://es.stackoverflow.com/users/100834/planta4"
+                                    target="_blank"> <FontAwesomeIcon icon={faStackOverflow}/>
                                 </a>
                             </li>
                             <li className="nav-line">
