@@ -1,13 +1,13 @@
 {
   "welcome": {
     "title": "Hi, i'm",
-    "subtitle": "I'm a full-stack web developer."
+    "subtitle": "I'm a full-stack developer."
   },
   "about": {
     "title": "About me",
     "name": "Jaime",
     "surname": "Rubio",
-    "profession": "Full Stack Web",
+    "profession": "Full Stack Developer",
     "description": "Curious that he loves challenges, constantly learning to keep my knowledge up to date, in particular, I have an interest in architecture, performance, design patterns, code quality and good practices. I consider myself a proactive, dynamic, empathetic and very happy person.",
     "foto": "/images/foto-personal.jpg"
   },
@@ -93,99 +93,97 @@
   "frameworks": [
     {
       "name": "Mocha",
-      "image": "https://img2.freepng.es/20180427/ivw/kisspng-mocha-node-js-javascript-software-testing-npm-5ae37d55ae0302.6235689115248581977128.jpg"
+      "image": "/images/logo-mocha.jpg"
     },
     {
       "name": "Chai",
-      "image": "https://camo.githubusercontent.com/7ecbd4531436e4f20c1dba52a4fd4ac367cfcc20a2f62cfe7a10f32da306afc6/687474703a2f2f636861696a732e636f6d2f696d672f636861692d6c6f676f2e706e67"
+      "image": "/images/logo-chai.png"
     },
     {
       "name": "Sinon.js",
-      "image": "https://sinonjs.org/assets/images/logo.png"
+      "image": "/images/logo-sinon.png"
     },
     {
       "name": "express.js",
-      "image": "https://e7.pngegg.com/pngimages/925/447/png-clipart-express-js-node-js-javascript-mongodb-node-js-text-trademark.png"
+      "image": "/images/logo-expressjs.png"
     },
     {
       "name": "jsonwebtoken",
-      "image": "https://coursework.vschool.io/content/images/2016/06/jwt.png"
+      "image": "/images/logo-jwt.png"
     },
     {
       "name": "Passport",
-      "image": "https://antoniofernandez.com/assets/blog/passportjs.png"
+      "image": "/images/logo-passportjs.png"
     },
     {
       "name": "Pino",
-      "image": "https://avatars.githubusercontent.com/u/23048140?s=400&v=4"
+      "image": "/images/logo-pino.png"
     },
     {
       "name": "Swagger",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png"
+      "image": "/images/logo-swagger.png"
     },
     {
       "name": "RabbitMQ",
-      "image": "http://www.jorgehernandezramirez.com/wp-content/uploads/2017/04/rabbitmq-logo.png"
+      "image": "/images/logo-rabbitmq.png"
     },
     {
       "name": "ZeroMQ",
-      "image": "https://folderit.net/wp-content/uploads/2014/12/zeromq-aplicaciones-distribuidas.jpg"
+      "image": "/images/logo-zeromq.webp"
     },
     {
       "name": "SocketCluster",
-      "image": "https://pbs.twimg.com/profile_images/477074971521339393/v2uoilfV.png"
+      "image": "/images/logo-socketcluster.png"
+    },
+    {
+      "name": "npm",
+      "image": "/images/logo-npm.jpeg"
     },
     {
       "name": "mongoose",
       "width": 90,
-      "image": "https://gblobscdn.gitbook.com/assets%2F-Lgyno4NC7rhy49BAEjN%2F-Lh2uMF0SeRmgQ9ESrbj%2F-Lh3BNps2alvubBYGzN1%2FScreen%20Shot%202019-06-10%20at%208.40.12%20PM.png?alt=media&token=b33b7f94-657f-4c88-b55c-8cbb586dfdea"
+      "image": "/images/logo-mongoose.png"
     },
     {
       "name": "Java",
-      "image": "http://www.manualweb.net/img/logos/java.png"
-    },
-
-    {
-      "name": "npm",
-      "image": "https://codigoonclick.com/wp-content/uploads/2019/05/npm-nodejs.jpeg"
+      "image": "/images/logo-java.png"
     },
     {
       "name": "Github",
-      "image": "https://img2.freepng.es/20180326/eye/kisspng-github-computer-icons-logo-github-5ab8a338143da0.8375508315220498480829.jpg"
+      "image": "/images/logo-github.jpg"
     },
     {
       "name": "Gitlab",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/GitLab_Logo.svg/1200px-GitLab_Logo.svg.png"
+      "image": "/images/logo-gitlab.png"
     },
-
     {
       "name": "Bootstrap",
-      "image": "https://camo.githubusercontent.com/a664defdd5c2ec93a3fbfb51e0f2aaafa5dc57bf1e13aa47456ced037b3cebe8/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67"
+      "image": "/images/logo-bootstrap.png"
     },
     {
       "name": "Bulma",
-      "image": "https://39ntbr6g.media.zestyio.com/bulma-logo.d4899f96e1858d7c1e61787a9f72ea96.png"
+      "image": "/images/logo-bulma.png"
     },
     {
       "name": "Materialize",
-      "image": "https://bestofjs.org/logos/materializecss.svg"
+      "image": "/images/logo-materialize.svg"
     },
     {
       "name": "Webstorm",
-      "image": "https://resources.jetbrains.com/storage/products/webstorm/img/meta/webstorm_logo_300x300.png"
+      "image": "/images/logo-webstorm.png"
     },
     {
       "name": "Trello",
-      "image": "https://play-lh.googleusercontent.com/CiGs15N1e1tXrSnVLEY9jOnKi1oNzPQNRjqhR8fXE0pnu_bRyNmfc8xXr2VQUJTfJ9A"
+      "image": "/images/logo-trello.png"
     },
     {
       "name": "Jira",
-      "image": "https://www.solarwinds.com/-/media/solarwinds/swdcv2/licensed-products/service-desk/integrations/sd-integrations-logo-jira.ashx?rev=701fbaa7f8ac4ae08e0406c8984c43e7&hash=75D4F04DE99B88DE7B2C4193F0616F1F"
+      "image": "/images/logo-jira.png"
     },
     {
       "name": "Scrum",
       "width": 75,
-      "image": "https://programaenlinea.net/wp-content/uploads/2016/06/scrum-arquitectura.png"
+      "image": "/images/logo-scrum.png"
     }
   ],
   "experiences": {
@@ -218,7 +216,7 @@
         "place": "Barcelona",
         "remote": true,
         "tasks": [
-          "Analysis and development of microservices with Docker / Docker Compose.",
+          "Analysis and development of microservices with Docker/Docker Compose.",
           "Creation, development and integration of internal or third party APIs (NodeJS).",
           "Messaging with Sockets (NodeJS).",
           "Handling databases (MongoDB, SQL Oracle and RedisDB)",
@@ -600,9 +598,9 @@
       ]
     }
   },
-  "interests":{
+  "interests": {
     "title": "Hobbies",
-    "hobbies":  [
+    "hobbies": [
       {
         "url": "/images/foto-snorkel.jpg",
         "title": "Diving",

@@ -23,3 +23,7 @@
 .progress > .progress-bar {
     background-color: rgba(30, 150, 50, 0.8);
 }
+
+.companyImage {
+    border-top-left-radius: 0.25rem;
+}
