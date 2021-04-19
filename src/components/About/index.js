@@ -6,16 +6,16 @@ import {LanguageContext} from '../LanguageProvider';
 function About(props) {
     const {translate: {about, skills, frameworks}} = useContext(LanguageContext)
     return (
-        <Layaut>
+        <Layaut className={"pt-5"}>
             <h2 className={'fw-bold text-center'}>{about.title}</h2>
             <hr className={'mt-1'}/>
             <div className={"row"}>
-                <div className={"col-sm-12 col-md-10 col-lg-6 col-xl-6"}>
+                <div className={"col-sm-12 col-md-12 col-lg-6 col-xl-6 pe-lg-5"}>
                     <div className={'row'}>
                         <div className={'col-12'}>
                             <img
                                 src={process.env.PUBLIC_URL + about.foto}
-                                className="img-thumbnail border-0 rounded-pill"
+                                className="img-thumbnail p-0 rounded"
                                 alt="imagen personal"
                             />
                         </div>
@@ -28,7 +28,7 @@ function About(props) {
                         </div>
                     </div>
                 </div>
-                <div className={"col-sm-12 col-md-10 col-lg-6 col-xl-6"}>
+                <div className={"col-sm-12 col-md-12 col-lg-6 col-xl-6 ps-lg-5"}>
                     <div className={"row"}>
                         <div className={"col"}>
                             {skills.map((skill, index) => {
@@ -47,7 +47,8 @@ function About(props) {
                     <div className={"row"}>
                         <div className={"col"}>
                             {frameworks.map(({image, name, width}, index) => {
-                                return <img height={40} width={width || 40}
+                                return <img key={`framework_${index}`}
+                                    height={40} width={width || 40}
                                             src={image}
                                             alt={name}
                                             data-bs-toggle={'tooltip' + index}

@@ -1,13 +1,13 @@
 {
   "welcome": {
     "title": "Hola, soy",
-    "subtitle": "Soy un desarrollador web full-stack."
+    "subtitle": "Soy desarrollador full-stack."
   },
   "about": {
     "title": "Sobre mí",
     "name": "Jaime",
     "surname": "Rubio",
-    "profession": "Full Stack Web",
+    "profession": "Full Stack Developer",
     "description": "Curioso que le encantan los retos, constantemente aprendiendo para mantener mis conocimientos al día, en particular, tengo interés por la arquitectura, rendimiento, patrones de diseño, calidad de código y buenas practicas. Me considero una persona proactiva, dinámica, empática y muy alegre.",
     "foto": "/images/foto-personal.jpg"
   },
@@ -136,6 +136,10 @@
       "image": "/images/logo-socketcluster.png"
     },
     {
+      "name": "npm",
+      "image": "/images/logo-npm.jpeg"
+    },
+    {
       "name": "mongoose",
       "width": 90,
       "image": "/images/logo-mongoose.png"
@@ -143,10 +147,6 @@
     {
       "name": "Java",
       "image": "/images/logo-java.png"
-    },
-    {
-      "name": "npm",
-      "image": "/images/logo-npm.jpeg"
     },
     {
       "name": "Github",
@@ -603,12 +603,12 @@
     "hobbies": [
       {
         "url": "/images/foto-snorkel.jpg",
-        "title": "Diving",
+        "title": "Bucear",
         "width": "40%"
       },
       {
         "url": "/images/foto-travelling.jpg",
-        "title": "Travelling",
+        "title": "Viajar",
         "width": "20%"
       },
       {
@@ -618,17 +618,17 @@
       },
       {
         "url": "/images/foto-snowboard.jpg",
-        "title": "Snowboarding",
+        "title": "Snow",
         "width": "38%"
       },
       {
         "url": "/images/foto-running.jpg",
-        "title": "Running",
+        "title": "Correr",
         "width": "38%"
       },
       {
         "url": "/images/foto-reading.jpg",
-        "title": "Reading",
+        "title": "Lectura",
         "width": "24%"
       }
     ]
