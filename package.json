@@ -1,5 +1,11 @@
 {
-  "name": "web-personal",
+  "name": "personal-website",
+  "description": "Information about the author and his experience.",
+  "author": {
+    "name": "Jaime Rubio",
+    "email": "jaime.rc@icloud.com"
+  },
+  "license": "ISC",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
