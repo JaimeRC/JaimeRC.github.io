@@ -47,7 +47,8 @@ function About(props) {
                     <div className={"row"}>
                         <div className={"col"}>
                             {frameworks.map(({image, name, width}, index) => {
-                                return <img height={40} width={width || 40}
+                                return <img key={`framework_${index}`}
+                                    height={40} width={width || 40}
                                             src={image}
                                             alt={name}
                                             data-bs-toggle={'tooltip' + index}

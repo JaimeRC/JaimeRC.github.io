@@ -24,7 +24,7 @@ function Training() {
                                         <a rel="noreferrer"
                                            href={company.website}
                                            target="_blank"
-                                           class="link-secondary">
+                                           className="link-secondary">
                                             <h5 className="card-title fw-bold">{company.name}</h5>
                                         </a>
                                     </div>

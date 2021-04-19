@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { LanguageContext } from '../LanguageProvider';
 import Layaut from '../Layout'
 
-
 export default function Experiences(props) {
     const { translate: { experiences } } = useContext(LanguageContext)
     return (
@@ -13,7 +12,7 @@ export default function Experiences(props) {
             <hr className={'mt-1'}/>
             {experiences.works.map((work, index) => {
                 return (
-                    <div className="card mb-3">
+                    <div className="card my-5" key={`experience_${index}`}>
                         <div className="row g-0">
                             <div className="col-md-4">
                                 <img src={process.env.PUBLIC_URL + work.companyLogo}
@@ -44,8 +43,7 @@ export default function Experiences(props) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                )
+                    </div>)
             })}
         </Layaut>
     )

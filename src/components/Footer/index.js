@@ -7,10 +7,10 @@ import {LanguageContext} from '../LanguageProvider';
 function Footer() {
     const {translate: {about}} = useContext(LanguageContext)
     return (
-        <div class="footer">
-            <div class="container py-5">
-                <div class="row pb-2">
-                    <div class="col-4 text-center">
+        <div className="footer">
+            <div className="container py-5">
+                <div className="row pb-2">
+                    <div className="col-4 text-center">
                         <a
                             rel="noreferrer"
                             className="mx-5 text-light"
