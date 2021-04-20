@@ -15,7 +15,7 @@ export default function Experiences(props) {
                     <div className="card my-5" key={`experience_${index}`}>
                         <div className="row g-0">
                             <div className="col-md-4">
-                                <img src={process.env.PUBLIC_URL + work.companyLogo}
+                                <img src={work.companyLogo}
                                      alt={work.company} className={"companyImage"}/>
                             </div>
                             <div className="col-md-8">

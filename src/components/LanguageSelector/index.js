@@ -8,11 +8,12 @@ function LanguageSelector() {
         <div className="language">
             {language === 'es'
                 ? <div onClick={() => updateLanguage('en')}>
-                    <img className={'languageFlagImg'} src="/images/foto-en.webp" alt={'english'}/>
+                    <img className={'languageFlagImg'}
+                         src="https://drive.google.com/uc?id=1DBqAkXXUcoVyeWik5CQTOJ_Ay0Lc9em7&export=download" alt={'english'}/>
                 </div>
                 : <div onClick={() => updateLanguage('es')}>
                     <img className={'languageFlagImg'}
-                         src={'/images/foto-es.jpeg'} alt={'spanish'}/>
+                         src="https://drive.google.com/uc?id=1YVghyLfwSYhFH6yUaVWlx6UVTmhANmcl&export=download" alt={'spanish'}/>
                 </div>
             }
         </div>

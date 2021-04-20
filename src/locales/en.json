@@ -9,7 +9,7 @@
     "surname": "Rubio",
     "profession": "Full Stack Developer",
     "description": "Curious that he loves challenges, constantly learning to keep my knowledge up to date, in particular, I have an interest in architecture, performance, design patterns, code quality and good practices. I consider myself a proactive, dynamic, empathetic and very happy person.",
-    "foto": "/images/foto-personal.jpg"
+    "foto": "https://drive.google.com/uc?id=1u6ax-Gb8RDoyBE1HUhJK3UfNl2kUwf5K&export=download"
   },
   "skills": [
     {
@@ -93,97 +93,97 @@
   "frameworks": [
     {
       "name": "Mocha",
-      "image": "/images/logo-mocha.jpg"
+      "image": "https://drive.google.com/uc?id=1QVxbHjSWZp4d1OzVXUTjJs4r-IeRjncS&export=download"
     },
     {
       "name": "Chai",
-      "image": "/images/logo-chai.png"
+      "image": "https://drive.google.com/uc?id=1F4M_bJ7obnUfXp6Z5MT1sSrHDWxL5aeO&export=download"
     },
     {
       "name": "Sinon.js",
-      "image": "/images/logo-sinon.png"
+      "image": "https://drive.google.com/uc?id=1T5vchJISP_70-LvpEeOliP92ymTyuqWi&export=download"
     },
     {
       "name": "express.js",
-      "image": "/images/logo-expressjs.png"
+      "image": "https://drive.google.com/uc?id=1OnMoiB7bravFCSDnTHTaTEoxUeWZ-7n6&export=download"
     },
     {
       "name": "jsonwebtoken",
-      "image": "/images/logo-jwt.png"
+      "image": "https://drive.google.com/uc?id=1jou7b9oPQWk3qQeT1aIQ5DaUXp-YEE1u&export=download"
     },
     {
       "name": "Passport",
-      "image": "/images/logo-passportjs.png"
+      "image": "https://drive.google.com/uc?id=1xnd3D9_OnF_vodV9hppn5HAw5QKya7_O&export=download"
     },
     {
       "name": "Pino",
-      "image": "/images/logo-pino.png"
+      "image": "https://drive.google.com/uc?id=1WxAerAtcbmsYi5vLbHiln_QFuYAPbrAX&export=download"
     },
     {
       "name": "Swagger",
-      "image": "/images/logo-swagger.png"
+      "image": "https://drive.google.com/uc?id=13AQToJlTx6eTJXSe4Ix9-pJu3UD5T-mr&export=download"
     },
     {
       "name": "RabbitMQ",
-      "image": "/images/logo-rabbitmq.png"
+      "image": "https://drive.google.com/uc?id=1kV1KtVhOHI0RGaiBIX8ad99NZ7PMl43T&export=download"
     },
     {
       "name": "ZeroMQ",
-      "image": "/images/logo-zeromq.webp"
+      "image": "https://drive.google.com/uc?id=14QyhrQhNYys97qhCYWYzlLrGxA6ncNS9&export=download"
     },
     {
       "name": "SocketCluster",
-      "image": "/images/logo-socketcluster.png"
+      "image": "https://drive.google.com/uc?id=1MiUdTde3j2JJqzR0hgNYk4nVXGcVdWqh&export=download"
     },
     {
       "name": "npm",
-      "image": "/images/logo-npm.jpeg"
+      "image": "https://drive.google.com/uc?id=1d2QJ1YsAmks5heQVVSKJC2_EiF_GR3dp&export=download"
     },
     {
       "name": "mongoose",
-      "width": 90,
-      "image": "/images/logo-mongoose.png"
+      "image": "https://drive.google.com/uc?id=1ESr_r5WCzZeVa8IW_niB0bfrEIcNnIx9&export=download",
+      "width": 90
     },
     {
       "name": "Java",
-      "image": "/images/logo-java.png"
+      "image": "https://drive.google.com/uc?id=1BIOhr1tISqWzR5wTe8ItWskpOX4-v8bs&export=download"
     },
     {
       "name": "Github",
-      "image": "/images/logo-github.jpg"
+      "image": "https://drive.google.com/uc?id=1yR_h_AoJsG2clY4ZPHgiqlCdLrRnZu6g&export=download"
     },
     {
       "name": "Gitlab",
-      "image": "/images/logo-gitlab.png"
+      "image": "https://drive.google.com/uc?id=1N9l5Edz1ip8qYe4gU1_ynHI0LTdgF3sk&export=download"
     },
     {
       "name": "Bootstrap",
-      "image": "/images/logo-bootstrap.png"
+      "image": "https://drive.google.com/uc?id=1dw5jisTKs9Jv3NHMr-lxrVrgoReYTP_3&export=download"
     },
     {
       "name": "Bulma",
-      "image": "/images/logo-bulma.png"
+      "image": "https://drive.google.com/uc?id=19bbd5-3HLUApGNuKr_zDOGW91TL4O00U&export=download"
     },
     {
       "name": "Materialize",
-      "image": "/images/logo-materialize.svg"
+      "image": "https://drive.google.com/uc?id=1fvJ9oyKxoldUsmH82MLpOhQ5XzKdY6fS&export=download"
     },
     {
       "name": "Webstorm",
-      "image": "/images/logo-webstorm.png"
+      "image": "https://drive.google.com/uc?id=1U0ELJTVZQV8li6IFhUdZmTS5L4m7Ncqq&export=download"
     },
     {
       "name": "Trello",
-      "image": "/images/logo-trello.png"
+      "image": "https://drive.google.com/uc?id=1jxGBv9ZqgJSMr6CJlhlCEqQaV6nGj70m&export=download"
     },
     {
       "name": "Jira",
-      "image": "/images/logo-jira.png"
+      "image": "https://drive.google.com/uc?id=11IdiKlcUJocpJNvuVp85R4khvE_3Yspa&export=download"
     },
     {
       "name": "Scrum",
       "width": 75,
-      "image": "/images/logo-scrum.png"
+      "image": "https://drive.google.com/uc?id=1njp_R1mTksYVv-kS5tesjiX9AKQrEwAg&export=download"
     }
   ],
   "experiences": {
@@ -192,7 +192,7 @@
       {
         "title": "Programmer analyst (Telefónica)",
         "company": "Modis",
-        "companyLogo": "/images/logo-telefonica.jpg",
+        "companyLogo": "https://drive.google.com/uc?id=1f2E3rs0kt_2hEpfcdjYrqzijliOEaX4H&export=download",
         "description": "",
         "place": "Barcelona",
         "remote": "true",
@@ -211,7 +211,7 @@
       {
         "title": "Full Stack Developer",
         "company": "nixi1",
-        "companyLogo": "/images/logo-nixi1.jpg",
+        "companyLogo": "https://drive.google.com/uc?id=19ZHDppabRDRIDQQayM9Ydofku1Gu4dn7&export=download",
         "description": "",
         "place": "Barcelona",
         "remote": true,
@@ -231,7 +231,7 @@
       {
         "title": "Full Stack Developer",
         "company": "Grupo Hotusa",
-        "companyLogo": "/images/logo-grupo-hotusa.jpg",
+        "companyLogo": "https://drive.google.com/uc?id=15p7GCo2n-uLatcivzdPiwuHCvvKrV5no&export=download",
         "description": "",
         "place": "Barcelona",
         "remote": false,
@@ -602,32 +602,32 @@
     "title": "Hobbies",
     "hobbies": [
       {
-        "url": "/images/foto-snorkel.jpg",
+        "url": "https://drive.google.com/uc?id=1DbCaWVWuFuZqcYU5D2jyn0ObiMjVg8Pb&export=download",
         "title": "Diving",
         "width": "40%"
       },
       {
-        "url": "/images/foto-travelling.jpg",
+        "url": "https://drive.google.com/uc?id=13VRTpkLvcUPgExhGsDZE3fejNggsrSze&export=download",
         "title": "Travelling",
         "width": "20%"
       },
       {
-        "url": "/images/foto-trekking.jpg",
+        "url": "https://drive.google.com/uc?id=1SQvK9j925goWpwm6h0UykXj3VA61mGgv&export=download",
         "title": "Trekking",
         "width": "40%"
       },
       {
-        "url": "/images/foto-snowboard.jpg",
+        "url": "https://drive.google.com/uc?id=1_hUZTpwUspjZwsOZeK83hzEyX9yWO-AN&export=download",
         "title": "Snowboarding",
         "width": "38%"
       },
       {
-        "url": "/images/foto-running.jpg",
+        "url": "https://drive.google.com/uc?id=1-ZEW8PkyaIZA6en4qO3x_XEFSfxKBQgv&export=download",
         "title": "Running",
         "width": "38%"
       },
       {
-        "url": "/images/foto-reading.jpg",
+        "url": "https://drive.google.com/uc?id=1vhHgoOuhK40YALIkwWbshGDEQl8SfVwS&export=download",
         "title": "Reading",
         "width": "24%"
       }
