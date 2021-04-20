@@ -2,7 +2,7 @@ import {useContext} from 'react'
 import './styles.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons';
-import {LanguageContext} from '../LanguageProvider';
+import {LanguageContext} from '../../context/LanguageProvider';
 
 function Footer() {
     const {translate: {about}} = useContext(LanguageContext)

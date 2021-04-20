@@ -1,7 +1,7 @@
 import './styles.css'
 import {useContext} from 'react';
 import Layaut from '../Layout'
-import {LanguageContext} from '../LanguageProvider';
+import {LanguageContext} from '../../context/LanguageProvider';
 
 function About(props) {
     const {translate: {about, skills, frameworks}} = useContext(LanguageContext)

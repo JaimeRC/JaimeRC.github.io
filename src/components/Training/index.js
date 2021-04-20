@@ -2,7 +2,7 @@ import './styles.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {useContext} from 'react';
 import {faClock, faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
-import {LanguageContext} from '../LanguageProvider';
+import {LanguageContext} from '../../context/LanguageProvider';
 import Layaut from '../Layout'
 
 function Training() {
