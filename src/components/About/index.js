@@ -14,7 +14,7 @@ function About(props) {
                     <div className={'row'}>
                         <div className={'col-12'}>
                             <img
-                                src={process.env.PUBLIC_URL + about.foto}
+                                src={about.foto}
                                 className="img-thumbnail p-0 rounded"
                                 alt="imagen personal"
                             />
