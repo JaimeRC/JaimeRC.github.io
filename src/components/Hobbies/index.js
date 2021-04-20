@@ -1,6 +1,6 @@
 import './styles.css'
 import {useContext} from 'react';
-import {LanguageContext} from '../LanguageProvider';
+import {LanguageContext} from '../../context/LanguageProvider';
 import Layaut from '../Layout'
 
 function Hobbies(props) {

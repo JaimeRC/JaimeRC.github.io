@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { faClock, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { LanguageContext } from '../LanguageProvider';
+import { LanguageContext } from '../../context/LanguageProvider';
 import Layaut from '../Layout'
 
 export default function Experiences(props) {

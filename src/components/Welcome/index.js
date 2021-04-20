@@ -1,7 +1,7 @@
 import './styles.css'
 import Canvas from '../Canvas';
 import { useContext } from 'react';
-import { LanguageContext } from '../LanguageProvider';
+import { LanguageContext } from '../../context/LanguageProvider';
 
 function Welcome() {
     const { translate: { welcome, about } } = useContext(LanguageContext)
