@@ -2,14 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
-import { LanguageProvider } from './components/LanguageProvider'
-import { fetchTranslations } from './api'
+import { LanguageProvider } from './context/LanguageProvider'
+import RealmApp from './context/Realm'
+import Index from './context/MongoDB'
 
 ReactDOM.render(
     <React.StrictMode>
-        <LanguageProvider fetchTranslations={fetchTranslations}>
-            <App/>
-        </LanguageProvider>
+        <RealmApp>
+            <Index>
+                <LanguageProvider>
+                    <App/>
+                </LanguageProvider>
+            </Index>
+        </RealmApp>
     </React.StrictMode>,
     document.getElementById('root')
 );
