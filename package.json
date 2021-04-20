@@ -1,12 +1,13 @@
 {
-  "name": "JaimeRC.github.io",
+  "name": "personal-website",
   "description": "Information about the author and his experience.",
   "author": {
     "name": "Jaime Rubio",
     "email": "jaime.rc@icloud.com"
   },
+  "homepage": "http://JaimeRC.github.io/personal-website",
   "repository": {
-    "url": "https://github.com/JaimeRC/JaimeRC.github.io"
+    "url": "https://github.com/JaimeRC/personal-website"
   },
   "license": "ISC",
   "version": "0.1.0",
