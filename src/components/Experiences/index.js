@@ -1,11 +1,10 @@
-import { useContext } from 'react';
 import { faClock, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { LanguageContext } from '../../context/LanguageProvider';
+import { useTranslations } from '../../context/LanguageProvider';
 import Layaut from '../Layout'
 
 export default function Experiences(props) {
-    const { translate: { experiences } } = useContext(LanguageContext)
+    const { translate: { experiences } } = useTranslations()
     return (
         <Layaut className={'bg-light'}>
             <h2 className={'fw-bold text-center'}>{experiences.title}</h2>
@@ -16,7 +15,7 @@ export default function Experiences(props) {
                         <div className="row g-0">
                             <div className="col-md-4">
                                 <img src={work.companyLogo}
-                                     alt={work.company} className={"companyImage"}/>
+                                     alt={work.company} className={'companyImage'}/>
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">

@@ -1,9 +1,8 @@
-import { useContext } from 'react';
 import './styles.css'
-import { LanguageContext } from '../../context/LanguageProvider';
+import { useTranslations } from '../../context/LanguageProvider';
 
 function LanguageSelector() {
-    const { language, updateLanguage } = useContext(LanguageContext)
+    const { language, updateLanguage } = useTranslations()
     return (
         <div className="language">
             {language === 'es'

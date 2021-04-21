@@ -1,10 +1,9 @@
 import './styles.css'
-import {useContext} from 'react';
-import {LanguageContext} from '../../context/LanguageProvider';
+import { useTranslations } from '../../context/LanguageProvider';
 import Layaut from '../Layout'
 
 function Hobbies(props) {
-    const {translate: {interests}} = useContext(LanguageContext)
+    const {translate: {interests}} = useTranslations()
     return (
         <Layaut className={'bg-light'}>
             <h2 className={'fw-bold text-center'}>{interests.title}</h2>

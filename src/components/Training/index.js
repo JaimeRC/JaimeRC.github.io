@@ -1,14 +1,13 @@
 import './styles.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {useContext} from 'react';
-import {faClock, faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
-import {LanguageContext} from '../../context/LanguageProvider';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { useTranslations } from '../../context/LanguageProvider';
 import Layaut from '../Layout'
 
 function Training() {
-    const {translate: {training, educations}} = useContext(LanguageContext)
+    const { translate: { training, educations } } = useTranslations()
     return (
-        <Layaut className={"mb-4"}>
+        <Layaut className={'mb-4'}>
             <h2 className={'fw-bold text-center'}>{training.title}</h2>
             <hr className={'mt-1'}/>
             <div className="row row-cols-1 row-cols-md-2 g-4 pt-4">
@@ -66,7 +65,7 @@ function Training() {
                                                                     </div>
                                                                     <div className={'col-1'}
                                                                          hidden={!course.urlCertificate}>
-                                                                        <a className={"link-success"}
+                                                                        <a className={'link-success'}
                                                                            rel="noreferrer"
                                                                            href={course.urlCertificate}
                                                                            target="_blank">

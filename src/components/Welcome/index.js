@@ -1,10 +1,9 @@
 import './styles.css'
 import Canvas from '../Canvas';
-import { useContext } from 'react';
-import { LanguageContext } from '../../context/LanguageProvider';
+import { useTranslations } from '../../context/LanguageProvider';
 
 function Welcome() {
-    const { translate: { welcome, about } } = useContext(LanguageContext)
+    const { translate: { welcome, about } } = useTranslations()
     return (
         <section className="flex height-fix">
             <div className="canvas">
