@@ -8,19 +8,21 @@ const RealmApp = ({ children }) => {
     const [ user, setUser ] = useState(null)
 
     useEffect(() => {
-        const logIn = async (email, password) => {
-            const credentials = RealmWeb.Credentials.anonymous()
-            try {
-                await app.logIn(credentials)
-                setUser(app.currentUser)
-                return app.currentUser
-            } catch (e) {
-                setUser(null)
-                return null
+        if (user === null) {
+            const logIn = async () => {
+                const credentials = RealmWeb.Credentials.anonymous()
+                try {
+                    await app.logIn(credentials)
+                    setUser(app.currentUser)
+                    return app.currentUser
+                } catch (e) {
+                    setUser(null)
+                    return null
+                }
             }
+            logIn()
         }
-        logIn()
-    },[])
+    })
 
     const logOut = () => {
         if (user !== null) {
