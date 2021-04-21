@@ -1,11 +1,11 @@
 import React, { useState, useCallback, useEffect, useRef, useContext } from 'react'
 import { useMongoDB } from '../MongoDB'
 
-const LanguageContext = React.createContext({ language: 'es', translate: {}, updateLanguage: () => {} })
+const LanguageContext = React.createContext({ language: process.env.REACT_APP_INIT_LANGUAGE, translate: {}, updateLanguage: () => {} })
 
 const LanguageProvider = ({ children }) => {
     const { db, fetchTranslations } = useMongoDB()
-    const [ { language, translate }, setLanguage ] = useState({ language: 'es', translate: {} })
+    const [ { language, translate }, setLanguage ] = useState({ language: process.env.REACT_APP_INIT_LANGUAGE, translate: {} })
     const initialTextsLoaded = useRef(false)
 
     const updateLanguage = useCallback(
