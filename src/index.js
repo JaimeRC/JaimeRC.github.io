@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
-import { LanguageProvider } from './context/LanguageProvider'
+import LanguageProvider from './context/LanguageProvider'
 import RealmApp from './context/Realm'
-import Index from './context/MongoDB'
+import MongoDB from './context/MongoDB'
 
 ReactDOM.render(
     <React.StrictMode>
         <RealmApp>
-            <Index>
+            <MongoDB>
                 <LanguageProvider>
                     <App/>
                 </LanguageProvider>
-            </Index>
+            </MongoDB>
         </RealmApp>
     </React.StrictMode>,
     document.getElementById('root')

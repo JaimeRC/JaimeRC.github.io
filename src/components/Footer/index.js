@@ -1,11 +1,10 @@
-import {useContext} from 'react'
 import './styles.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons';
-import {LanguageContext} from '../../context/LanguageProvider';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { useTranslations } from '../../context/LanguageProvider';
 
 function Footer() {
-    const {translate: {about}} = useContext(LanguageContext)
+    const { translate: { about } } = useTranslations()
     return (
         <div className="footer">
             <div className="container py-5">
@@ -27,7 +26,7 @@ function Footer() {
                             target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} className={'fa-2x margin'}/>
                         </a>
-                      
+
                     </div>
                     <div className="col-4 text-center">
                         <a

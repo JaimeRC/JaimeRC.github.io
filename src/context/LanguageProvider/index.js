@@ -1,9 +1,9 @@
-import React, { useState, createContext, useCallback, useEffect, useRef } from 'react'
+import React, { useState, useCallback, useEffect, useRef, useContext } from 'react'
 import { useMongoDB } from '../MongoDB'
 
-export const LanguageContext = createContext({ language: 'es', translate: {}, updateLanguage: () => {} })
+const LanguageContext = React.createContext({ language: 'es', translate: {}, updateLanguage: () => {} })
 
-export const LanguageProvider = ({ children }) => {
+const LanguageProvider = ({ children }) => {
     const { db, fetchTranslations } = useMongoDB()
     const [ { language, translate }, setLanguage ] = useState({ language: 'es', translate: {} })
     const initialTextsLoaded = useRef(false)
@@ -15,7 +15,7 @@ export const LanguageProvider = ({ children }) => {
             initialTextsLoaded.current = true
             setLanguage({ language: newLang, translate: newTranslate })
         },
-        [ language , db])
+        [ language, db, fetchTranslations ])
 
     useEffect(() => {
         updateLanguage(language)
@@ -33,3 +33,13 @@ export const LanguageProvider = ({ children }) => {
         </LanguageContext.Provider>
     )
 }
+
+export const useTranslations = () => {
+    const languageContext = useContext(LanguageContext)
+    if (languageContext == null) {
+        throw new Error('useRealmApp() called outside of a RealmApp?')
+    }
+    return languageContext
+}
+
+export default LanguageProvider

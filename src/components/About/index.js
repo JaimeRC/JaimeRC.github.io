@@ -1,16 +1,15 @@
 import './styles.css'
-import {useContext} from 'react';
 import Layaut from '../Layout'
-import {LanguageContext} from '../../context/LanguageProvider';
+import { useTranslations } from '../../context/LanguageProvider';
 
 function About(props) {
-    const {translate: {about, skills, frameworks}} = useContext(LanguageContext)
+    const { translate: { about, skills, frameworks } } = useTranslations()
     return (
-        <Layaut className={"pt-5"}>
+        <Layaut className={'pt-5'}>
             <h2 className={'fw-bold text-center'}>{about.title}</h2>
             <hr className={'mt-1'}/>
-            <div className={"row"}>
-                <div className={"col-sm-12 col-md-12 col-lg-6 col-xl-6 pe-lg-5"}>
+            <div className={'row'}>
+                <div className={'col-sm-12 col-md-12 col-lg-6 col-xl-6 pe-lg-5'}>
                     <div className={'row'}>
                         <div className={'col-12'}>
                             <img
@@ -28,13 +27,13 @@ function About(props) {
                         </div>
                     </div>
                 </div>
-                <div className={"col-sm-12 col-md-12 col-lg-6 col-xl-6 ps-lg-5"}>
-                    <div className={"row"}>
-                        <div className={"col"}>
+                <div className={'col-sm-12 col-md-12 col-lg-6 col-xl-6 ps-lg-5'}>
+                    <div className={'row'}>
+                        <div className={'col'}>
                             {skills.map((skill, index) => {
                                 return (<div className="progress my-3" key={`skill_${index}`}>
                                     <div className="progress-bar" role="progressbar"
-                                         style={{'width': skill.percentage + '%'}}
+                                         style={{ 'width': skill.percentage + '%' }}
                                          aria-valuenow={skill.percentage} aria-valuemin="0"
                                          aria-valuemax="100">
                                     </div>
@@ -44,17 +43,17 @@ function About(props) {
                             })}
                         </div>
                     </div>
-                    <div className={"row"}>
-                        <div className={"col"}>
-                            {frameworks.map(({image, name, width}, index) => {
+                    <div className={'row'}>
+                        <div className={'col'}>
+                            {frameworks.map(({ image, name, width }, index) => {
                                 return <img key={`framework_${index}`}
-                                    height={40} width={width || 40}
+                                            height={40} width={width || 40}
                                             src={image}
                                             alt={name}
                                             data-bs-toggle={'tooltip' + index}
                                             data-bs-placement="top"
                                             title={name}
-                                            className={"rounded-pill m-1"}/>
+                                            className={'rounded-pill m-1'}/>
                             })}
                         </div>
                     </div>
