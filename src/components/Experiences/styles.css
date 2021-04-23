@@ -1,0 +1,4 @@
+.isActive{
+    border-color: rgba(30, 150, 50, 0.2);
+    box-shadow: 0 0 0 0.25rem rgba(30, 150, 50, 0.2);
+}

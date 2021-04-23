@@ -25,5 +25,11 @@ section:nth-of-type(1) {
 }
 
 .highlight{
-    color: red;
+    color: yellow;
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        font-size: 20pt;
+    }
 }

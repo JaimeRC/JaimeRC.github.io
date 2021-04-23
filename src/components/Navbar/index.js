@@ -2,8 +2,10 @@ import './styles.css'
 import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import LanguageSelector from '../LanguageSelector'
+import { useTranslations } from '../../context/LanguageProvider';
 
 function Navbar() {
+    const { translate: { about } } = useTranslations()
     return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-navbar">
             <div className="container-fluid">
@@ -12,7 +14,7 @@ function Navbar() {
                         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"/>
                 </button>
-                <label className="navbar-brand">{'Jaime Rubio'}</label>
+                <label className="navbar-brand">{`${about.name} ${about.surname}`}</label>
                 <div className="collapse navbar-collapse" id="navbarToggler">
                     <div className="navbar-nav me-auto"/>
                     <form className="d-flex">
