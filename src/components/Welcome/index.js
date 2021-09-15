@@ -1,3 +1,4 @@
+import React from 'react'
 import './styles.css'
 import Canvas from '../Canvas';
 import { useTranslations } from '../../context/LanguageProvider';

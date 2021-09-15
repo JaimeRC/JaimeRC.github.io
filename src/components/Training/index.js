@@ -1,13 +1,14 @@
+import React from 'react'
 import './styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from '../../context/LanguageProvider';
-import Layaut from '../Layout'
+import Layout from '../Layout'
 
 function Training() {
     const { translate: { training, educations } } = useTranslations()
     return (
-        <Layaut className={'mb-4'}>
+        <Layout className={'mb-4'}>
             <h2 className={'fw-bold text-center'}>{training.title}</h2>
             <hr className={'mt-1'}/>
             <div className="row row-cols-1 row-cols-md-2 g-4 pt-4">
@@ -87,7 +88,7 @@ function Training() {
                         </div>)
                 })}
             </div>
-        </Layaut>
+        </Layout>
     )
 }
 

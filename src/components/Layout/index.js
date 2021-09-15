@@ -1,3 +1,5 @@
+import React from 'react'
+
 function Layaut({children, className}) {
     return (
         <div className={`row py-3 mx-auto ${className}`}>
