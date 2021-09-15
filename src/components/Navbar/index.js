@@ -1,3 +1,4 @@
+import React from 'react'
 import './styles.css'
 import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';

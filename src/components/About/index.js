@@ -1,3 +1,4 @@
+import React from 'react'
 import './styles.css'
 import Layaut from '../Layout'
 import { useTranslations } from '../../context/LanguageProvider';
