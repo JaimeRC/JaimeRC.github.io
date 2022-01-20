@@ -25,6 +25,8 @@ jobs:
           REACT_APP_MONGO_CLIENT: ${{ secrets.REACT_APP_MONGO_CLIENT }}
           REACT_APP_MONGO_DB: ${{ secrets.REACT_APP_MONGO_DB }}
           REACT_APP_MONGO_COLLECTION: ${{ secrets.REACT_APP_MONGO_COLLECTION }}
+          REACT_APP_MONGO_COLLECTION_TRANSLATIONS: ${{ secrets.REACT_APP_MONGO_COLLECTION }}
+          REACT_APP_MONGO_COLLECTION_IMAGES: ${{ secrets.REACT_APP_MONGO_COLLECTION }}
           REACT_APP_INIT_LANGUAGE: ${{ secrets.REACT_APP_INIT_LANGUAGE }}
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
