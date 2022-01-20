@@ -1,11 +1,11 @@
 import React from 'react'
 import './styles.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-import { useTranslations } from '../../context/LanguageProvider';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons';
+import {useTranslations} from '../../context/LanguageProvider';
 
 function Footer() {
-    const { translate: { about } } = useTranslations()
+    const {translate: {about}} = useTranslations()
     return (
         <div className="footer">
             <div className="container py-5">
@@ -42,7 +42,7 @@ function Footer() {
                 <div className="line"/>
                 <div className="row pt-2">
                     <div className="col-12 text-center">
-                        <label>{`${about.name} ${about.surname} ©2021`}</label>
+                        <label>{`${about.name} ${about.surname} ©${(new Date()).getFullYear()}`}</label>
                     </div>
                 </div>
             </div>
