@@ -13,9 +13,8 @@ const ImagesProvider = ({children}) => {
             const newImages = await fetchImages()
             setImages(newImages)
         }
-
         resolve()
-    }, [])
+    }, [])// eslint-disable-line react-hooks/exhaustive-deps
 
 
     return (

@@ -10,7 +10,7 @@ export const CardTraining = ({company, index}) => {
     const {image, name, website, city, courses} = company
 
     return (
-        <div className="col" key={`educations_${index}`}>
+        <div className="col">
             <div className={`card cardTraining ${active ? "activeCard" : ''}`}>
                 <div className={"companyImg"}>
                     <img src={training[image]} alt={name}/>
