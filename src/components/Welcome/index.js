@@ -12,8 +12,9 @@ function Welcome() {
             </div>
             <div className="flex">
                 <div className="text">
-                    {welcome.title} <span className="highlight">{`${about.name} ${about.surname}`}</span>.
-                    <br/>{welcome.subtitle}
+                    <span className="welcomeText">{welcome.title}</span>
+                    <span className="highlight">{`${about.name} ${about.surname}`}.</span>
+                    <span className="slogan">{welcome.subtitle}</span>
                 </div>
             </div>
         </section>

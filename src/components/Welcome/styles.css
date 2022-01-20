@@ -14,18 +14,31 @@ section:nth-of-type(1) {
     position: absolute;
 }
 
-.text{
-    text-align: center;
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     color: #fff;
     margin: 0 0 20px 0;
     pointer-events: none;
     z-index: 1;
-    font-size: 36pt;
-    line-height: 50pt;
 }
 
-.highlight{
+.welcomeText {
+    margin-bottom: 20px;
+    font-size: 14pt;
+}
+
+.highlight {
+    font-size: 40pt;
+    font-weight: 800;
     color: yellow;
+}
+
+.slogan {
+    font-size: 20pt;
+    font-weight: 600;
+    color: #ddd;
 }
 
 @media screen and (max-width: 600px) {

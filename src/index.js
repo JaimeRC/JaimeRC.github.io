@@ -5,13 +5,16 @@ import App from './App';
 import LanguageProvider from './context/LanguageProvider'
 import RealmApp from './context/Realm'
 import MongoDB from './context/MongoDB'
+import ImagesProvider from "./context/ImagesProvider";
 
 ReactDOM.render(
     <React.StrictMode>
         <RealmApp>
             <MongoDB>
                 <LanguageProvider>
-                    <App/>
+                    <ImagesProvider>
+                        <App/>
+                    </ImagesProvider>
                 </LanguageProvider>
             </MongoDB>
         </RealmApp>

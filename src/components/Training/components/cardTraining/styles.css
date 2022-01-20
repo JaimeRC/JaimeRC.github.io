@@ -1,0 +1,31 @@
+.cardTraining {
+    box-shadow: 5px 5px 5px #eee;
+}
+
+.cardTraining img {
+    width: 100%;
+    object-position: 0 center;
+    object-fit: contain;
+}
+
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgba(30, 150, 50, 1);
+    background-color: transparent;
+}
+
+.activeCard {
+    border-color: rgba(30, 150, 50, 0.2) !important;
+    box-shadow: 0 0 0 0.25rem rgba(30, 150, 50, 0.2) !important;
+}
+
+.companyImg {
+    height: 215px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
