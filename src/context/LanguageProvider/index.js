@@ -37,7 +37,7 @@ const LanguageProvider = ({ children }) => {
 export const useTranslations = () => {
     const languageContext = useContext(LanguageContext)
     if (languageContext == null) {
-        throw new Error('useRealmApp() called outside of a RealmApp?')
+        throw new Error('useTranslations() called outside of a RealmApp?')
     }
     return languageContext
 }
