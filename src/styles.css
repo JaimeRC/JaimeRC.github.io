@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    color: rgb(97, 97, 97);
+    color: rgb(120, 120, 120);
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Animaciones */
