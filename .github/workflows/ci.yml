@@ -39,7 +39,7 @@ jobs:
           pages_threshold: major_outage
           
       - name: Deploy
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v2.6.0
         with:
           target_branch: gh-pages
           build_dir: build
