@@ -33,8 +33,13 @@ jobs:
           REACT_APP_MONGO_COLLECTION_IMAGES: ${{ secrets.REACT_APP_MONGO_COLLECTION_IMAGES }}
           REACT_APP_INIT_LANGUAGE: ${{ secrets.REACT_APP_INIT_LANGUAGE }}
 
+      - name: Check GitHub Pages status
+        uses: crazy-max/ghaction-github-status@v2
+        with:
+          pages_threshold: major_outage
+          
       - name: Deploy
-        uses: crazy-max/ghaction-github-pages@v1
+        uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
           build_dir: build
