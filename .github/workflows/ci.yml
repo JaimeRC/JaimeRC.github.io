@@ -1,29 +1,31 @@
-name: Node.js CI
+name: build-and-deploy
+
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build-test-deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [15.x]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Set-up Node
-        uses: actions/setup-node@v1
+      - name: Checking out code
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          node-version: "15.x"
-
-      - name: Install dependencies
-        run: npm install
-
-      #     - name: Test
-      #       run: npm test
-
-      - name: Build
-        run: npm run build
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Installing dependencies
+        run: npm ci
+      - name: Building project
         env:
           REACT_APP_REALM_APP_ID: ${{ secrets.REACT_APP_REALM_APP_ID }}
           REACT_APP_MONGO_CLIENT: ${{ secrets.REACT_APP_MONGO_CLIENT }}
@@ -32,17 +34,29 @@ jobs:
           REACT_APP_MONGO_COLLECTION_TRANSLATIONS: ${{ secrets.REACT_APP_MONGO_COLLECTION_TRANSLATIONS }}
           REACT_APP_MONGO_COLLECTION_IMAGES: ${{ secrets.REACT_APP_MONGO_COLLECTION_IMAGES }}
           REACT_APP_INIT_LANGUAGE: ${{ secrets.REACT_APP_INIT_LANGUAGE }}
-
-      - name: Check GitHub Pages status
-        uses: crazy-max/ghaction-github-status@v2
+          run: npm run build --if-present
+      - name: Uploading production-ready build files
+        uses: actions/upload-artifact@v2
         with:
-          pages_threshold: major_outage
-          
-      - name: Deploy
-        uses: crazy-max/ghaction-github-pages@v2.6.0
+          name: production-files
+          path: ./build
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+      - name: Downloading artifact
+        uses: actions/download-artifact@v2
         with:
-          target_branch: gh-pages
-          build_dir: build
-          domain: ${{ secrets.CUSTOM_DOMAIN }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+          name: production-files
+          path: ./build
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: Deploy to S3 bucket
+        run: aws s3 sync ./build s3://${{ secrets.AWS_BUCKET_DEPLOY }} --follow-symlinks --delete
+      - name: Invalidate cache in Cloudfront
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/*"
