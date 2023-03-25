@@ -45,6 +45,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    steps:
       - name: Downloading artifact
         uses: actions/download-artifact@v2
         with:
