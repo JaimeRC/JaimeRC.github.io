@@ -1,0 +1,210 @@
+---
+import { getLangFromUrl, getI18N } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+const { welcome, about } = getI18N(lang)
+---
+<section class="flex height-fix">
+    <div class="canvas">
+        <astro-heart>
+            <canvas id="particle-canvas" width={2880} height={700}/>
+        </astro-heart>
+    </div>
+    <div class="flex">
+        <h1 class="text">
+            <span class="welcomeText">{welcome.title}</span>
+            <span class="highlight">{`${about.name} ${about.surname}`}.</span>
+            <span class="slogan">{welcome.subtitle}</span>
+        </h1>
+    </div>
+</section>
+
+<style>
+    .flex {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section:nth-of-type(1) {
+        height: calc(90vh + 53px);
+        padding: 0 10px;
+    }
+
+    #particle-canvas{
+        width: 100%;
+        height: 110vh;
+    }
+
+    .canvas {
+        background: linear-gradient(to bottom, rgb(37, 41, 52) 0%,rgb(37, 41, 52) 100%) ;
+        position: absolute;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        color: #fff;
+        margin: 0 0 20px 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .welcomeText {
+        margin-bottom: 20px;
+        font-size: 14pt;
+    }
+
+    .highlight {
+        font-size: 40pt;
+        font-weight: 800;
+        color: yellow;
+    }
+
+    .slogan {
+        font-size: 20pt;
+        font-weight: 600;
+        color: #ddd;
+    }
+
+    @media screen and (max-width: 600px) {
+        .text {
+            font-size: 20pt;
+        }
+    }
+
+
+</style>
+
+<script>
+
+    import startAnimation from './canvas'
+    // Define the behaviour for our new type of HTML element.
+    class AstroHeart extends HTMLElement {
+        NUM_PARTICLES = 600;
+        PARTICLE_SIZE = 0.5; // View heights
+        SPEED = 50000; // Milliseconds
+        particles: any[] = [];
+
+        constructor() {
+            super();
+            startAnimation()
+            /*
+            let canvas = this.querySelector('#particle-canvas') as HTMLCanvasElement;
+            canvas.width = canvas.offsetWidth * window.devicePixelRatio;
+            canvas.height = canvas.offsetHeight * window.devicePixelRatio;
+            let ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
+
+            window.addEventListener('resize', () => {
+                canvas.width = canvas?.offsetWidth * window.devicePixelRatio;
+                canvas.height = canvas.offsetHeight * window.devicePixelRatio;
+                ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
+            });
+
+            this.initParticles(canvas, ctx)
+            */
+        }
+
+        initParticles(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
+            for (let i = 0; i < this.NUM_PARTICLES; i++) {
+                this.particles.push(this.createParticle());
+            }
+
+            requestAnimationFrame(time => this.draw(time, canvas, ctx));
+        }
+
+        draw(time: any, canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
+            // Move particles
+            this.particles.forEach((particle, index) => this.particles[index] = this.moveParticle(particle, time));
+
+            // Clear the canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the particles
+            this.particles.forEach(particle => this.drawParticle(particle, canvas, ctx));
+
+            // Schedule next frame
+            requestAnimationFrame(time => this.draw(time, canvas, ctx));
+        }
+
+        moveParticle(particle: any, time: any) {
+            const progress = (time - particle.startTime) % particle.duration / particle.duration;
+            return {
+                ...particle,
+                x: progress,
+                y: Math.sin(progress * particle.arc) * particle.amplitude + particle.offsetY
+            };
+
+        }
+
+        drawParticle(particle: any, canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
+            canvas = this.querySelector('#particle-canvas') as HTMLCanvasElement;
+            const vh = canvas.height / 100;
+
+            ctx.fillStyle = particle.colour;
+            ctx.beginPath();
+
+            const x = particle.x * canvas.width
+            const y = particle.y * vh + canvas.height / 2
+            const radiusXY = particle.diameter * vh
+            const endAngle = 4 * Math.PI
+            ctx.ellipse(x, y, radiusXY, radiusXY, 0, 0, endAngle);
+
+            ctx.fill();
+        }
+
+        createParticle() {
+            const colour = {
+                r: 30,
+                g: this.randomNormal({ mean: 125, dev: 20 }),
+                b: 50,
+                a: this.rand(0, 1)
+            };
+
+            return {
+                x: -2,
+                y: -2,
+                diameter: Math.max(0, this.randomNormal({ mean: this.PARTICLE_SIZE, dev: this.PARTICLE_SIZE / 2 })),
+                duration: this.randomNormal({ mean: this.SPEED, dev: this.SPEED * 0.1 }),
+                amplitude: this.randomNormal({ mean: 16, dev: 2 }),
+                offsetY: this.randomNormal({ mean: 0, dev: 10 }),
+                arc: Math.PI * 2,
+                startTime: performance.now() - this.rand(0, this.SPEED),
+                colour: `rgba(${colour.r}, ${colour.g}, ${colour.b}, ${colour.a})`
+            };
+
+        }
+
+        randomNormal(o: any) {
+            o = Object.assign({ mean: 0, dev: 1, pool: [] }, o)
+            if (Array.isArray(o.pool) && o.pool.length > 0) {
+                return this.normalPool(o);
+            }
+            let r, a, n, e, l = o.mean, t = o.dev;
+            do {
+                r = (a = 2 * Math.random() - 1) * a + (n = 2 * Math.random() - 1) * n;
+            } while (r >= 1);
+            e = a * Math.sqrt(-2 * Math.log(r) / r)
+            return t * e + l;
+        }
+
+        rand(low: number, high: number) {
+            return Math.random() * (high - low) + low;
+        }
+
+        normalPool(o: any) {
+            let r = 0;
+            do {
+                let a = Math.round(this.randomNormal({ mean: o.mean, dev: o.dev }));
+                if (a < o.pool.length && a >= 0) return o.pool[a];
+                r++;
+            } while (r < 100);
+        }
+    }
+
+    // Tell the browser to use our AstroHeart class for <astro-heart> elements.
+    customElements.define('astro-heart', AstroHeart);
+</script>

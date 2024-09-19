@@ -1,0 +1,184 @@
+Hobby---
+import CustomSection from "./CustomSection.astro";
+import type { Interests, Hobby } from "../types";
+import IMAGES from '../data/images.json'
+
+import { getLangFromUrl, getI18N } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const { interests } = getI18N(lang)
+const hobbies = interests.hobbies as Hobby[]
+const interestsImg = IMAGES.interests as Interests
+---
+
+<CustomSection customStyle="bg-light">
+    <h2 class={'fw-bold text-center'}>{interests.title}</h2>
+    <hr class={'mt-1'}/>
+    <div class="row mt-5">
+        <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 px-0">
+            <button class={'imageWrapper w-100 border-0'}>
+                <div class={'imageSrc'}
+                     style={{ backgroundImage: `url(${interestsImg[hobbies[0].url]})` }}/>
+                <div class={'imageBackdrop'}/>
+                <div class={'imageButton'}>
+                    <label color="inherit" class={'imageTitle fw-bold'}>
+                        {hobbies[0].title.toUpperCase()}
+                    </label>
+                </div>
+            </button>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 px-0">
+            <button class={'imageWrapper w-100 border-0'}>
+                <div class={'imageSrc'}
+                     style={{ backgroundImage: `url(${IMAGES.interests[hobbies[1].url]})` }}/>
+                <div class={'imageBackdrop'}/>
+                <div class={'imageButton'}>
+                    <label color="inherit" class={'imageTitle fw-bold'}>
+                        {hobbies[1].title.toUpperCase()}
+                    </label>
+                </div>
+            </button>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 px-0">
+            <button class={'imageWrapper w-100 border-0'}>
+                <div class={'imageSrc'}
+                     style={{ backgroundImage: `url(${IMAGES.interests[hobbies[2].url]})` }}/>
+                <div class={'imageBackdrop'}/>
+                <div class={'imageButton'}>
+                    <label color="inherit" class={'imageTitle fw-bold'}>
+                        {hobbies[2].title.toUpperCase()}
+                    </label>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0">
+            <button class={'imageWrapper w-100 border-0'}>
+                <div class={'imageSrc'}
+                     style={{ backgroundImage: `url(${IMAGES.interests[hobbies[3].url]})` }}/>
+                <div class={'imageBackdrop'}/>
+                <div class={'imageButton'}>
+                    <label color="inherit" class={'imageTitle fw-bold'}>
+                        {hobbies[3].title.toUpperCase()}
+                    </label>
+                </div>
+            </button>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0">
+            <button class={'imageWrapper w-100 border-0'}>
+                <div class={'imageSrc'}
+                     style={{ backgroundImage: `url(${IMAGES.interests[hobbies[4].url]})` }}/>
+                <div class={'imageBackdrop'}/>
+                <div class={'imageButton'}>
+                    <label color="inherit" class={'imageTitle fw-bold'}>
+                        {hobbies[4].title.toUpperCase()}
+                    </label>
+                </div>
+            </button>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0">
+            <button class={'imageWrapper w-100 border-0'}>
+                <div class={'imageSrc'}
+                     style={{ backgroundImage: `url(${IMAGES.interests[hobbies[5].url]})` }}/>
+                <div class={'imageBackdrop'}/>
+                <div class={'imageButton'}>
+                    <label color="inherit" class={'imageTitle fw-bold'}>
+                        {hobbies[5].title.toUpperCase()}
+                    </label>
+                </div>
+            </button>
+        </div>
+    </div>
+</CustomSection>
+
+<style>
+    .interest-image {
+        align-items: center;
+        cursor: auto;
+        background-size: cover;
+
+    }
+
+    .interest-text {
+        padding: 16px 32px 14px;
+    }
+
+
+    .root {
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .images {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imageWrapper {
+        position: relative;
+        display: block;
+        padding: 0;
+        border-radius: 0;
+        height: 40vh;
+        cursor: auto;
+    }
+
+    .imageWrapper:hover {
+        z-index: 1;
+    }
+
+    .imageWrapper:hover .imageBackdrop {
+        opacity: 0.15;
+    }
+
+    .imageWrapper:hover .imageMarked {
+        opacity: 0
+    }
+
+    .imageWrapper :hover .imageTitle {
+        border: 4px solid currentColor;
+    }
+
+    .imageButton {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .imageSrc {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center 40%;
+    }
+
+    .imageBackdrop {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: black;
+        opacity: 0.5;
+        transition: opacity;
+    }
+
+    .imageTitle {
+        position: relative;
+        padding: 8px;
+    }
+</style>

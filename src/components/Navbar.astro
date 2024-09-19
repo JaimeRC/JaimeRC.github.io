@@ -1,0 +1,64 @@
+---
+import { Icon } from 'astro-icon/components'
+import LanguagePicker from "./LanguagePicker.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"/>
+            </button>
+            <label class="navbar-brand">{t('nav.brand')}</label>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <div class="navbar-nav me-auto"/>
+                <form class="d-flex">
+                    <ul class="navbar-nav me-2 text-center">
+                        <li class="nav-item">
+                            <a
+                                    rel="noreferrer"
+                                    class="text-light nav-link"
+                                    href="https://github.com/JaimeRC"
+                                    target="_blank">
+                                <Icon name="mdi:github-circle"/>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                    class="nav-link text-light"
+                                    rel="noreferrer"
+                                    href="https://www.linkedin.com/in/jaimerubiocaballero/"
+                                    target="_blank">
+                                <Icon name="mdi:linkedin"/>
+
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                    rel="noreferrer"
+                                    class="nav-link text-light"
+                                    href="https://es.stackoverflow.com/users/100834/planta4"
+                                    target="_blank">
+                                <Icon name="mdi:stackoverflow"/>
+                            </a>
+                        </li>
+                        <li class="nav-line">
+                            <LanguagePicker/>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<style>
+    .bg-navbar {
+        background: linear-gradient(to bottom, rgb(37, 41, 52) 0%, rgb(37, 41, 52) 100%);
+    }
+</style>

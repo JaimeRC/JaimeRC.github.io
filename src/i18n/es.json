@@ -1,0 +1,653 @@
+{
+  "language": "es",
+  "welcome": {
+    "title": "Hola, soy",
+    "subtitle": "Soy desarrollador full-stack."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "name": "Jaime",
+    "surname": "Rubio",
+    "profession": "Full Stack Developer",
+    "description": "Curioso que le encantan los retos, constantemente aprendiendo para mantener mis conocimientos al día, en particular, tengo interés por la arquitectura, rendimiento, patrones de diseño, calidad de código y buenas practicas. Me considero una persona proactiva, dinámica, empática y muy alegre.",
+    "foto": "profile"
+  },
+  "skills": [
+    {
+      "label": "language",
+      "skill": "Javascript",
+      "image": "javascript",
+      "percentage": "80",
+      "color": "#6bba24"
+    },
+    {
+      "label": "language",
+      "skill": "Typescript",
+      "image": "typescript",
+      "percentage": "70",
+      "color": "#1a90ff"
+    },
+    {
+      "label": "language",
+      "skill": "HTML / CSS",
+      "image": "html",
+      "percentage": "70"
+    },
+    {
+      "label": "language",
+      "skill": "Java",
+      "image": "java",
+      "percentage": "50",
+      "color": "#1a90ff"
+    },
+    {
+      "label": "language",
+      "skill": "Go",
+      "image": "go",
+      "percentage": "40",
+      "color": "#1a90ff"
+    },
+    {
+      "label": "language",
+      "skill": "NodeJS",
+      "image": "nodejs",
+      "percentage": "80",
+      "color": "#1a90ff"
+    },
+    {
+      "label": "framework",
+      "skill": "ReactJS",
+      "image": "reactjs",
+      "percentage": "70",
+      "color": "#1a90ff"
+    },
+    {
+      "label": "framework",
+      "skill": "Docker",
+      "image": "docker",
+      "percentage": "70"
+    },
+    {
+      "label": "database",
+      "skill": "RedisDB",
+      "image": "redisdb",
+      "percentage": "75",
+      "color": "#1a90ff"
+    },
+    {
+      "label": "database",
+      "skill": "MongoDB",
+      "image": "mongodb",
+      "percentage": "80",
+      "color": "#1a90ff"
+    },
+    {
+      "label": "database",
+      "skill": "Git",
+      "image": "git",
+      "percentage": "80"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Mocha",
+      "image": "mocha"
+    },
+    {
+      "name": "Chai",
+      "image": "chaijs"
+    },
+    {
+      "name": "SinonJS",
+      "image": "sinonjs"
+    },
+    {
+      "name": "expressJS",
+      "image": "expressjs"
+    },
+    {
+      "name": "jsonwebtoken",
+      "image": "jsonwebtoken"
+    },
+    {
+      "name": "Passport",
+      "image": "passport"
+    },
+    {
+      "name": "Pino",
+      "image": "pino"
+    },
+    {
+      "name": "Swagger",
+      "image": "swagger"
+    },
+    {
+      "name": "RabbitMQ",
+      "image": "rabbitmq"
+    },
+    {
+      "name": "ZeroMQ",
+      "image": "zeromq"
+    },
+    {
+      "name": "SocketCluster",
+      "image": "socketcluster"
+    },
+    {
+      "name": "npm",
+      "image": "npm"
+    },
+    {
+      "name": "mongoose",
+      "image": "mongoose",
+      "width": 90
+    },
+    {
+      "name": "Java",
+      "image": "java"
+    },
+    {
+      "name": "Github",
+      "image": "github"
+    },
+    {
+      "name": "Gitlab",
+      "image": "gitlab"
+    },
+    {
+      "name": "Bootstrap",
+      "image": "bootstrap"
+    },
+    {
+      "name": "Bulma",
+      "image": "bulma"
+    },
+    {
+      "name": "Materialize",
+      "image": "materialize"
+    },
+    {
+      "name": "Webstorm",
+      "image": "webstorm"
+    },
+    {
+      "name": "Trello",
+      "image": "trello"
+    },
+    {
+      "name": "Jira",
+      "image": "jira"
+    },
+    {
+      "name": "Scrum",
+      "width": 75,
+      "image": "scrum"
+    },
+    {
+      "name": "Salesforce",
+      "image": "salesforce",
+      "width": 75
+    },
+    {
+      "name": "Aws",
+      "image": "aws",
+      "width": 75
+    }
+  ],
+  "experiences": {
+    "title": "Experiencia profesional",
+    "works": [
+      {
+        "title": "Ingeniero de Software",
+        "company": "Ocasión Plus",
+        "companyLogo": "ocasionplus",
+        "place": "Madrid",
+        "remote": true,
+        "tasks": [
+          "AWS (Fargate, Cloudfront, S3, Route 53, EC2, etc.).",
+          "Google Cloud Platform.",
+          "Arquitectura de bases de datos NoSql con MongoDB Atlas.",
+          "CI y CD con Gitlab.",
+          "Análisis y desarrollo de microservicios y serverless (NodeJS).",
+          "Integración con terceros.",
+          "Implementación y mejoras en Front-end con React.",
+          "Test de Integración y unitarios (Mocha, Chai, Sinon).",
+          "Jira y Confluence."
+        ],
+        "from": "02/2022",
+        "isActive": true
+      },
+      {
+        "title": "Ingeniero de Software",
+        "company": "forMarketer",
+        "companyLogo": "formarketer",
+        "place": "Barcelona",
+        "remote": true,
+        "tasks": [
+          "Arquitectura de bases de datos NoSql con MongoDB Atlas.",
+          "CI y CD con Gitlab.",
+          "AWS (Cloudfront, S3, Route 53, EC2, etc.).",
+          "Análisis y desarrollo de microservicios con AWS.",
+          "Creación, desarrollo y integración de APIs internas o de terceros (NodeJS).",
+          "Integración con Salesforce (Apex, Lightning Web Component, Aura).",
+          "Mensajería con Sockets.",
+          "Implementación y mejoras en Front-end con ReactJS.",
+          "TDD, test de Integración y unitarios (Mocha, Chai)."
+        ],
+        "from": "05/2021",
+        "to": "02/2022",
+        "isActive": false
+      },
+      {
+        "title": "Analista programador (Telefónica)",
+        "company": "Modis",
+        "companyLogo": "modis",
+        "place": "Barcelona",
+        "remote": true,
+        "tasks": [
+          "Análisis de la API de WhatsApp Bussiness para su integración con el bot de Telefónica (AURA).",
+          "Implementación y adaptación de funcionalidades de Microsoft Bot Framework para aplicarse a WhatsApp como canal.",
+          "Desarrollo de pruebas para la transformación de diferentes tipos de Card de Microsoft para su uso en WhatsApp (mensajes de texto, multimedia y templates), dando soporte al equipo de Producto y UIX.",
+          "Análisis de la API de Genesys Engage (Sofware call center) para integrarse con el bot de Telefónica y WhatsApp.",
+          "Desarrollo con TypeScript.",
+          "Test de Integración y unitarios (Mocha, Chai, Sinon, Nock).",
+          "Metodología Scrum, integración continua, GitHub (Git-Flow), Jira y Confluence."
+        ],
+        "from": "09/2020",
+        "to": "05/2021",
+        "isActive": false
+      },
+      {
+        "title": "Full Stack Developer",
+        "company": "nixi1",
+        "companyLogo": "nixi1",
+        "place": "Barcelona",
+        "remote": true,
+        "tasks": [
+          "Análisis y desarrollo de microservicios con Docker/Docker Compose.",
+          "Creación, desarrollo y integración de APIs internas o de terceros (NodeJS).",
+          "Mensajería con Sockets (NodeJS).",
+          "Manejo de bases de datos (MongoDB, SQL Oracle y RedisDB)",
+          "Uso de AWS.",
+          "Diseño de paginas Webs con el frameworks de CSS (Bootstrap) y integración con ReactJS y Redux).",
+          "TDD, test de Integración y unitarios (Mocha, Chai).",
+          "Metodología Scrum, integración continua, Gitlab, Git submodules."
+        ],
+        "from": "07/2019",
+        "to": "09/2020"
+      },
+      {
+        "title": "Full Stack Developer",
+        "company": "Grupo Hotusa",
+        "companyLogo": "grupo_hotusa",
+        "place": "Barcelona",
+        "remote": false,
+        "tasks": [
+          "Análisis y desarrollo de proyectos en NodeJS o Java.",
+          "Creación y desarrollo de APIs Rest y Web Services (NodeJS/Java).",
+          "Diseño de paginas Webs con frameworks de CSS (Bootstrap/Materialize) y desarrollo de las mismas con JavaScript (ReactJS y AngularJS).",
+          "Mensajería con ZeroMQ y RabbitMQ (NodeJS).",
+          "Manejo de bases de datos (MongoDB, SQL Oracle y RedisDB).",
+          "Mantenimiento, desarrollo, y nuevas implementaciones de Aplicaciones Web XML (Java).",
+          "TDD para la realización de nuevas implementaciones (JUnit, Mocha, Chai, Jest) y pruebas de rendimiento, carga y nivel de estrés (JMeter y Apache Bench).",
+          "Metodología Scrum, integración continua y Git-flow"
+        ],
+        "from": "04/2018",
+        "to": "07/2019"
+      }
+    ]
+  },
+  "training": {
+    "title": "Formación",
+    "courses": [
+      {
+        "title": "Full Stack Developer",
+        "company": "Skylab Coders Academy",
+        "website": "https://www.skylabcoders.com/es",
+        "city": "Barcelona",
+        "description": "Javascript, Coding, Nodejs, AngularJs, Web Development, Software Development, jQuery, MongoDB, Continuous Deployment, TDD, HTML, CSS y ReactJS",
+        "from": 2018,
+        "to": 2018
+      },
+      {
+        "title": "Técnico Superior en Sistemas de Telecomunicación e Informática",
+        "company": "I. E. S. La Rosaleda",
+        "url": "https://ieslarosaleda.com/centro/",
+        "city": "Málaga",
+        "from": 2004,
+        "to": 2006
+      },
+      {
+        "company": "MongoDB",
+        "website": "https://university.mongodb.com/courses/A300/about",
+        "title": "A300: Atlas Security",
+        "urlCertificate": "https://university.mongodb.com/course_completion/db301f2f-9cdf-464a-93c8-001703c329d6?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing",
+        "logo": "mongodb",
+        "from": "06/2020",
+        "to": "06/2020"
+      },
+      {
+        "company": "A2SECURE",
+        "title": "Fundamentos de CiberSeguridad y Normativa PCI-DSS v3.2.1",
+        "logo": "a2secure",
+        "from": "06/2020",
+        "to": "06/2020"
+      },
+      {
+        "company": "A2SECURE",
+        "title": "PCI-DSS v3.2.1 Training for Developers",
+        "logo": "a2secure",
+        "from": "06/2020",
+        "to": "06/2020"
+      },
+      {
+        "company": "Udemy",
+        "title": "Aprende Redis 5 desde Cero",
+        "certificate": "UC-78d38aa8-5590-449a-ab81-30c07ac6c919",
+        "urlCertificate": "https://ude.my/UC-78d38aa8-5590-449a-ab81-30c07ac6c919",
+        "logo": "udemy",
+        "from": "04/2020",
+        "to": "03/2020"
+      },
+      {
+        "company": "MongoDB",
+        "website": "https://university.mongodb.com/courses/M320/about",
+        "title": "M320: Data modeling",
+        "urlCertificate": "http://university.mongodb.com/course_completion/65ed8f8e-f903-4b6a-8be5-a440e0113347",
+        "logo": "mongodb",
+        "from": "10/2019",
+        "to": "10/2019"
+      },
+      {
+        "company": "Udemy",
+        "title": "Aprende Docker desde Cero a Swarm y Kubernetes",
+        "certificate": "UC-T5JEV1IA",
+        "urlCertificate": "http://ude.my/UC-T5JEV1IA",
+        "logo": "udemy",
+        "from": "09/2019",
+        "to": "09/2019"
+      },
+      {
+        "company": "Udemy",
+        "title": "Iniciación de Containers en Docker",
+        "certificate": "UC-7E4UCZ6J",
+        "urlCertificate": "http://ude.my/UC-7E4UCZ6J",
+        "logo": "udemy",
+        "from": "04/2019",
+        "to": "04/2019"
+      },
+      {
+        "company": "MongoDB",
+        "website": "https://university.mongodb.com/courses/M103/about",
+        "title": "M103: Basic Cluster Administration",
+        "urlCertificate": "http://university.mongodb.com/course_completion/da4a2833-4821-439e-846e-23d83145",
+        "logo": "mongodb",
+        "from": "04/2019",
+        "to": "04/2019"
+      },
+      {
+        "company": "MongoDB",
+        "website": "https://university.mongodb.com/courses/M121/about",
+        "title": "M121: The MongoDB Aggregation Framework",
+        "urlCertificate": "http://university.mongodb.com/course_completion/894d97e5-7b22-413e-9cf6-5a673793",
+        "logo": "mongodb",
+        "from": "04/2019",
+        "to": "04/2019"
+      },
+      {
+        "company": "MongoDB",
+        "website": "https://university.mongodb.com/courses/M201/about",
+        "title": "M201: MongoDB Performance",
+        "urlCertificate": "http://university.mongodb.com/course_completion/72fc2264-7958-4c3b-854b-0e0181fa",
+        "logo": "mongodb",
+        "from": "04/2019",
+        "to": "04/2019"
+      },
+      {
+        "company": "MongoDB",
+        "website": "https://university.mongodb.com/courses/M312/about",
+        "title": "M312: Diagnostics and Debugging",
+        "urlCertificate": "http://university.mongodb.com/course_completion/86350c14-23ee-47da-bd4f-3d0758aa",
+        "logo": "mongodb",
+        "from": "04/2019",
+        "to": "04/2019"
+      },
+      {
+        "company": "MongoDB",
+        "website": "https://university.mongodb.com/courses/M001/about",
+        "title": "M001: MongoDB Basics",
+        "urlCertificate": "https://university.mongodb.com/course_completion/6a38c390-1386-436c-bf1a-b7400ce6",
+        "logo": "mongodb",
+        "from": "03/2019",
+        "to": "03/2019"
+      },
+      {
+        "company": "MongoDB",
+        "website": "https://university.mongodb.com/courses/M220JS/about",
+        "title": "M220JS: MongoDB for Javascript Developers",
+        "urlCertificate": "https://university.mongodb.com/course_completion/c98c5f80-1985-45ad-b6de-8cfd456a",
+        "logo": "mongodb",
+        "from": "03/2019",
+        "to": "03/2019"
+      },
+      {
+        "company": "Udemy",
+        "title": "Advanced React and Redux: 2018 Edition",
+        "certificate": "UC-Z9O127JZ",
+        "urlCertificate": "http://ude.my/UC-Z9O127JZ",
+        "logo": "udemy",
+        "from": "08/2018",
+        "to": "08/2018"
+      }
+    ]
+  },
+  "educations": {
+    "skylabcoder": {
+      "name": "Skylab Coders Academy",
+      "website": "https://www.skylabcoders.com/es",
+      "image": "skylabcoders",
+      "city": "Barcelona",
+      "courses": [
+        {
+          "title": "Full Stack Developer",
+          "description": "Javascript, Coding, Nodejs, AngularJs, Web Development, Software Development, jQuery, MongoDB, Continuous Deployment, TDD, HTML, CSS y ReactJS",
+          "from": 2018,
+          "to": 2018
+        }
+      ]
+    },
+    "ieslarosaleda": {
+      "name": "I. E. S. La Rosaleda",
+      "website": "https://ieslarosaleda.com/centro/",
+      "image": "ieslarosaleda",
+      "city": "Málaga",
+      "courses": [
+        {
+          "title": "Técnico Superior en Sistemas de Telecomunicación e Informática",
+          "website": "https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza/fp-grado-superior/detalle-titulo?idTitulo=85",
+          "from": 2004,
+          "to": 2006
+        }
+      ]
+    },
+    "mongodb": {
+      "name": "MongoDB University",
+      "website": "https://university.mongodb.com/",
+      "image": "mongodb",
+      "city": "online",
+      "courses": [
+        {
+          "title": "M150: Authentication & Authorization",
+          "website": "https://university.mongodb.com/courses/M150/about",
+          "urlCertificate": "https://university.mongodb.com/course_completion/60ad2835-9884-4f7b-a3b3-4960234c7070?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing",
+          "from": "02/2022",
+          "to": "02/2022"
+        },
+        {
+          "title": "M112: Diagnostic Thinking",
+          "website": "https://university.mongodb.com/courses/M112/about",
+          "urlCertificate": "https://university.mongodb.com/course_completion/b01a02dc-4436-468b-9aaf-66b2efc45b63?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing",
+          "from": "09/2021",
+          "to": "09/2021"
+        },
+        {
+          "title": "A300: Atlas Security",
+          "website": "https://university.mongodb.com/courses/A300/about",
+          "urlCertificate": "https://university.mongodb.com/course_completion/db301f2f-9cdf-464a-93c8-001703c329d6?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing",
+          "from": "06/2020",
+          "to": "06/2020"
+        },
+        {
+          "title": "M320: Data modeling",
+          "website": "https://university.mongodb.com/courses/M320/about",
+          "urlCertificate": "http://university.mongodb.com/course_completion/65ed8f8e-f903-4b6a-8be5-a440e0113347",
+          "from": "10/2019",
+          "to": "10/2019"
+        },
+        {
+          "title": "M103: Basic Cluster Administration",
+          "website": "https://university.mongodb.com/courses/M103/about",
+          "urlCertificate": "http://university.mongodb.com/course_completion/da4a2833-4821-439e-846e-23d83145",
+          "from": "04/2019",
+          "to": "04/2019"
+        },
+        {
+          "title": "M121: The MongoDB Aggregation Framework",
+          "website": "https://university.mongodb.com/courses/M121/about",
+          "urlCertificate": "http://university.mongodb.com/course_completion/894d97e5-7b22-413e-9cf6-5a673793",
+          "from": "04/2019",
+          "to": "04/2019"
+        },
+        {
+          "title": "M201: MongoDB Performance",
+          "website": "https://university.mongodb.com/courses/M201/about",
+          "urlCertificate": "http://university.mongodb.com/course_completion/72fc2264-7958-4c3b-854b-0e0181fa",
+          "from": "04/2019",
+          "to": "04/2019"
+        },
+        {
+          "title": "M312: Diagnostics and Debugging",
+          "website": "https://university.mongodb.com/courses/M312/about",
+          "urlCertificate": "http://university.mongodb.com/course_completion/86350c14-23ee-47da-bd4f-3d0758aa",
+          "from": "04/2019",
+          "to": "04/2019"
+        },
+        {
+          "title": "M001: MongoDB Basics",
+          "website": "https://university.mongodb.com/courses/M001/about",
+          "urlCertificate": "https://university.mongodb.com/course_completion/6a38c390-1386-436c-bf1a-b7400ce6",
+          "from": "03/2019",
+          "to": "03/2019"
+        },
+        {
+          "title": "M220JS: MongoDB for Javascript Developers",
+          "website": "https://university.mongodb.com/courses/M220JS/about",
+          "urlCertificate": "https://university.mongodb.com/course_completion/c98c5f80-1985-45ad-b6de-8cfd456a",
+          "from": "03/2019",
+          "to": "03/2019"
+        }
+      ]
+    },
+    "A2SECURE": {
+      "name": "A2SECURE",
+      "website": "https://www.a2secure.com/",
+      "image": "a2secure",
+      "city": "online",
+      "courses": [
+        {
+          "title": "Fundamentos de CiberSeguridad y Normativa PCI-DSS v3.2.1",
+          "from": "06/2020",
+          "to": "06/2020"
+        },
+        {
+          "title": "PCI-DSS v3.2.1 Training for Developers",
+          "from": "06/2020",
+          "to": "06/2020"
+        }
+      ]
+    },
+    "udemy": {
+      "name": "Udemy",
+      "website": "https://www.udemy.com/",
+      "image": "udemy",
+      "city": "online",
+      "courses": [
+        {
+          "title": "Aprende Redis 5 desde Cero",
+          "certificate": "UC-78d38aa8-5590-449a-ab81-30c07ac6c919",
+          "urlCertificate": "https://ude.my/UC-78d38aa8-5590-449a-ab81-30c07ac6c919",
+          "from": "04/2020",
+          "to": "03/2020"
+        },
+        {
+          "title": "Aprende Docker desde Cero a Swarm y Kubernetes",
+          "certificate": "UC-T5JEV1IA",
+          "urlCertificate": "http://ude.my/UC-T5JEV1IA",
+          "from": "09/2019",
+          "to": "09/2019"
+        },
+        {
+          "title": "Iniciación de Containers en Docker",
+          "certificate": "UC-7E4UCZ6J",
+          "urlCertificate": "http://ude.my/UC-7E4UCZ6J",
+          "from": "04/2019",
+          "to": "04/2019"
+        },
+        {
+          "title": "Advanced React and Redux: 2018 Edition",
+          "certificate": "UC-Z9O127JZ",
+          "urlCertificate": "http://ude.my/UC-Z9O127JZ",
+          "from": "08/2018",
+          "to": "08/2018"
+        }
+      ]
+    }
+  },
+  "interests": {
+    "title": "Aficiones",
+    "hobbies": [
+      {
+        "url": "diving",
+        "title": "Bucear",
+        "width": "40%"
+      },
+      {
+        "url": "travelling",
+        "title": "Viajar",
+        "width": "20%"
+      },
+      {
+        "url": "trekking",
+        "title": "Trekking",
+        "width": "40%"
+      },
+      {
+        "url": "snowing",
+        "title": "Snow",
+        "width": "38%"
+      },
+      {
+        "url": "running",
+        "title": "Correr",
+        "width": "38%"
+      },
+      {
+        "url": "reading",
+        "title": "Lectura",
+        "width": "24%"
+      }
+    ]
+  },
+  "jsonLD": {
+    "blog": {
+      "titular": "Página web de Jaime RC",
+      "description": "Breve descripción de mi trayectoria profesional a lo largo de los años",
+      "articleSection": "Trayectoria profesional",
+      "articleBody": "Una breve descripción de mi trayectoria profesional a lo largo de los años"
+    },
+    "webPage": {
+      "name": "Página web de Jaime RC",
+      "description": "Breve descripción de mi trayectoria profesional a lo largo de los años"
+    }
+  }
+}

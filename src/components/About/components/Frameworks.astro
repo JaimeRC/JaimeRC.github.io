@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import IMAGES from '../../../data/images.json'
+import { getLangFromUrl, getI18N } from "../../../i18n/utils";
+import type { Frameworks, FrameworksImg } from "../../../types";
+
+const lang = getLangFromUrl(Astro.url);
+
+const { frameworks } = getI18N(lang)
+const frameworksImg = IMAGES.frameworks as FrameworksImg
+---
+<div class={"row mt-5"}>
+    <div class={'col text-center'}>
+        {(frameworks as Frameworks[]).map(({ image, name, width }, index) => {
+            return (
+                    <Image
+                            src={frameworksImg[image]}
+                            height={40} width={width || 40}
+                            alt={name}
+                            data-bs-toggle={'tooltip' + index}
+                            data-bs-placement="top"
+                            title={name}
+                            class={'rounded-pill m-2'}
+                    />)
+        })}
+    </div>
+
+</div>
