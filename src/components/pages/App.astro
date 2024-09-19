@@ -1,0 +1,20 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import Layout from "../../layouts/Layout.astro";
+import Welcome from "../Welcome/index.astro";
+import About from "../About/index.astro";
+import Experience from "../Experiences/index.astro";
+import Training from "../Training/index.astro";
+import Hobbies from "../Hobbies.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t('meta.title')} description={t('meta.description')}>
+    <Welcome/>
+    <About/>
+    <Experience/>
+    <Training/>
+    <Hobbies/>
+</Layout>

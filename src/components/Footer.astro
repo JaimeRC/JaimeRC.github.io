@@ -1,0 +1,60 @@
+---
+import { Icon } from 'astro-icon/components'
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row pb-2">
+            <div class="col-4 text-center">
+                <a
+                        rel="noreferrer"
+                        class="mx-5 text-light"
+                        href="https://github.com/JaimeRC"
+                        target="_blank">
+                    <Icon name="mdi:github-circle" width={32} height={32}/>
+                </a>
+            </div>
+            <div class="col-4 text-center">
+                <a
+                        class="mx-5 text-light"
+                        rel="noreferrer"
+                        href="https://www.linkedin.com/in/jaimerubiocaballero/"
+                        target="_blank">
+                    <Icon name="mdi:linkedin" width={32} height={32}/>
+                </a>
+
+            </div>
+            <div class="col-4 text-center">
+                <a
+                        rel="noreferrer"
+                        class="mx-5 text-light"
+                        href="https://es.stackoverflow.com/users/100834/planta4"
+                        target="_blank">
+                    <Icon name="mdi:stackoverflow" width={32} height={32}/>
+                </a>
+            </div>
+        </div>
+        <div class="line"/>
+        <div class="row pt-2">
+            <div class="col-12 text-center">
+                <label>{`${t('footer.brand')} ©${(new Date()).getFullYear()}`}</label>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background: linear-gradient(to bottom, rgb(37, 41, 52) 0%,rgb(37, 41, 52) 100%) ;
+    }
+
+    .line {
+        height:2px;
+        background-color:rgb(206,206,206);
+        width:100%;
+    }
+</style>

@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import { personal } from '../../../data/images.json'
+
+import { getLangFromUrl, getI18N } from "../../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const { about } = getI18N(lang)
+
+---
+<div class={'row'}>
+    <div class={'col-sm-12 col-md-12 col-lg-6 col-xl-6 pe-lg-5 text-center'}>
+        <Image
+                src={personal}
+                width={420}
+                height={316}
+                class="img-thumbnail p-0 rounded"
+                alt={`${about.name} ${about.surname}`}
+        />
+    </div>
+    <div class={'col-sm-12 col-md-12 col-lg-6 col-xl-6 pe-lg-5 py-3'}>
+        <h4 class={'fw-bold text-left'}>{about.profession}</h4>
+        <h6 class={'text-left pt-3'}>{about.description}</h6>
+    </div>
+</div>

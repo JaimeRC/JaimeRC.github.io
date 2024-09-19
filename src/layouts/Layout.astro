@@ -1,0 +1,60 @@
+---
+import Navbar from "../components/Navbar.astro";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { getLangFromUrl } from '../i18n/utils';
+import Footer from "../components/Footer.astro";
+import { getJsonLD } from "./jsonLD";
+
+const lang = getLangFromUrl(Astro.url);
+const CANONICAL_URL = (new URL('', Astro.site)).origin;
+
+const { BlogPosting, WebSite, WebPage } = getJsonLD(lang, CANONICAL_URL)
+
+interface Props {
+    title: string;
+    description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Astro description"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="generator" content={Astro.generator}/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico"/>
+    <link rel="sitemap" href="/sitemap-index.xml"/>
+    <title>{title}</title>
+    <meta name="description" content={description}/>
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(BlogPosting)}/>
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(WebPage)}/>
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(WebSite)}/>
+</head>
+
+<body>
+<Navbar/>
+<main>
+    <slot/>
+</main>
+<Footer/>
+</body>
+
+</html>
+
+<style is:global>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,200&display=swap');
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        color: rgb(120, 120, 120);
+        -webkit-font-smoothing: antialiased;
+    }
+</style>
+
+<script>
+    import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+</script>

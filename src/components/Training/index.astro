@@ -1,0 +1,21 @@
+---
+import CustomSection from "../CustomSection.astro";
+import Card from "./Card.astro";
+
+import { getLangFromUrl , getI18N} from "../../i18n/utils";
+import type { Company } from "../../types";
+
+const lang = getLangFromUrl(Astro.url);
+
+const { training, educations } = getI18N(lang)
+const companies = Object.values(educations) as Company[]
+---
+<CustomSection customStyle="mb-4">
+    <h2 class={'fw-bold text-center'}>{training.title}</h2>
+    <hr class={'mt-1'}/>
+    <div class="row row-cols-1 row-cols-md-2 g-4 pt-4">
+        {companies.map((company, index: number) => {
+            return <Card company={company} index={index}/>
+        })}
+    </div>
+</CustomSection>

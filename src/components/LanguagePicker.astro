@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import IMAGES from '../data/images.json'
+
+import { getLangFromUrl, useTranslatedPath, useTranslations } from "../i18n/utils";
+import { LANG } from "../i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+
+const t = useTranslations(lang);
+---
+<div class="language">
+    {lang === 'es'
+        ? <a href={translatePath('/', LANG.ENGLISH)}>
+                <Image class={'languageFlagImg'}
+                       width={30}
+                       height={30}
+                       src={IMAGES.lang.en} alt={t(`lang.en`)}/>
+            </a>
+        : <a href={translatePath('/', LANG.SPANISH)}>
+                <Image class={'languageFlagImg'}
+                       width={30}
+                       height={30}
+                       src={IMAGES.lang.es} alt={t(`lang.es`)}/>
+            </a>
+    }
+</div>
+
+<style>
+    .language {
+        transform: scale(0.5);
+    }
+
+    .language img {
+        border-radius: 100%;
+        margin: 5px 0;
+        transform: scale(1) !important;
+    }
+</style>

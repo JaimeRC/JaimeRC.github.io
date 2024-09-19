@@ -1,0 +1,18 @@
+---
+import CustomSection from "../CustomSection.astro";
+import { getLangFromUrl, getI18N } from "../../i18n/utils";
+import Card from "./Card.astro";
+import type { Work } from "../../types";
+
+const lang = getLangFromUrl(Astro.url);
+
+const { experiences } = getI18N(lang)
+const works = experiences.works as Work[]
+---
+
+<CustomSection customStyle="bg-light">
+    <h2 class={'fw-bold text-center'}>{experiences.title}</h2>
+    <hr class={'mt-1'}/>
+
+    {works.map((work,index: number)=> <Card work={work} index={index}/>)}
+</CustomSection>
